@@ -20,11 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\21_10_11-num_to_english_format.cpp" />
+    <ClCompile Include="code\21_10_30-single-number.cpp" />
+    <ClCompile Include="code\21_10_31-words-for-keyboard.cpp" />
     <ClCompile Include="code\21_10_8-get_repeat_form_dna.cpp" />
     <ClCompile Include="code\21_10_10-sumfor_1234.cpp" />
     <ClCompile Include="code\21_10_2-dec2tohex.cpp" />
     <ClCompile Include="code\21_10_3-fraction2todec.cpp" />
     <ClCompile Include="code\21_10_9-dataflow_to_array.cpp" />
+    <ClCompile Include="code\21_11_1-distribute-candy.cpp" />
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />
     <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp" />

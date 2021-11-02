@@ -51,6 +51,15 @@
     <ClCompile Include="code\21_10_11-num_to_english_format.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_11_1-distribute-candy.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_31-words-for-keyboard.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_30-single-number.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

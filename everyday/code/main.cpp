@@ -12,14 +12,15 @@
 //#include "21_10_10-sumfor_1234.cpp"
 //#include "21_10_9-dataflow_to_array.cpp"
 //#include "21_10_8-get_repeat_form_dna.cpp"
-#include "21_10_11-num_to_english_format.cpp"
+//#include "21_10_11-num_to_english_format.cpp"
+#include "21_10_30-single-number.cpp"
 
 int main(void) {
 	//int num = 1234567891;
-	int num = 1000;
+	vector<int> num = { 1, 2, 1, 3, 2, 5 };
 	Solution temp;
-	string result = temp.numberToWords(num);
-	cout << result << endl;
+	vector<int> result = temp.singleNumber(num);
+	Print<int>::PrintOneDemionVector(result);
 }
 
 
