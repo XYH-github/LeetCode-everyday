@@ -27,6 +27,30 @@
     <ClCompile Include="code\21_9_5-rank7_gene_rank10.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_9_30-area_for_retang.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_2-dec2tohex.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_3-fraction2todec.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_10-sumfor_1234.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_9-dataflow_to_array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_8-get_repeat_form_dna.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_11-num_to_english_format.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
