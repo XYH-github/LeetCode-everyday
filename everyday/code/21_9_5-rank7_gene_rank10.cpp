@@ -7,10 +7,6 @@
 不要使用系统的 Math.random() 方法。
 
 
-Solution temp;
-    int result = temp.rand10();
-    cout << result << endl;
-
 */
 
 
@@ -38,14 +34,8 @@ public:
     }*/
 
     int rand10() {
-        int row, col, idx;
-        do {
-            row = rand7();
-            col = rand7();
-            idx = col + (row - 1) * 7;
-        } while (idx > 40);
-        return 1 + (idx - 1) % 10;
-    } 
+        
+    }
 
 
 
