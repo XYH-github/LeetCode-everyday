@@ -35,4 +35,13 @@ public:
 			cout << arr[i] << endl;
 		}
 	}
+
+	static void VectorFormTrans(string& str) {
+		for (auto& index : str) {
+			if (index == '[')
+				index = '{';
+			if (index == ']')
+				index = '}';
+		}
+	}
 };

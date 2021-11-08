@@ -60,6 +60,24 @@
     <ClCompile Include="code\21_10_30-single-number.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_11_3-rainwater-connection.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_8-game-for-guest-digital.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_7-sum-for-range.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_6-missing-num.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_8-vaild-perfect-square.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
