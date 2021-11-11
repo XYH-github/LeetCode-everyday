@@ -19,16 +19,16 @@
 //#include "21_11_7-sum-for-range.cpp"
 //#include "21_11_6-missing-num.cpp"
 //#include "21_11_5-longest-arithmetic-sunsequence.cpp"
+#include "21_11_8-vaild-perfect-square.cpp"
 
 int main(void) {
 	/*string input = "[[2, 2], [3, 3]];";
 	Print<string>::VectorFormTrans(input);
 	cout << input << endl;*/
 
-	vector<int> arr = { 1,5,7,8,5,3,4,2,1 };
-	int difference = -2;
+	int num = 16;
 	Solution temp;
-	int result = temp.longestSubsequence(arr, difference);
+	bool result = temp.isPerfectSquare(num);
 	cout << result << endl;
 }
 
