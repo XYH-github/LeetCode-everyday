@@ -19,16 +19,18 @@
 //#include "21_11_7-sum-for-range.cpp"
 //#include "21_11_6-missing-num.cpp"
 //#include "21_11_5-longest-arithmetic-sunsequence.cpp"
-#include "21_11_8-vaild-perfect-square.cpp"
+//#include "21_11_4-vaild-perfect-square.cpp"
+//#include "21_11_17-maximum-product-of-word-lengths.cpp"
+#include "21_11_17-perfect-rectangle.cpp"
 
 int main(void) {
-	/*string input = "[[2, 2], [3, 3]];";
+	/*string input = "[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]];";
 	Print<string>::VectorFormTrans(input);
 	cout << input << endl;*/
 
-	int num = 16;
+	vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
 	Solution temp;
-	bool result = temp.isPerfectSquare(num);
+	bool result = temp.isRectangleCover(num);
 	cout << result << endl;
 }
 

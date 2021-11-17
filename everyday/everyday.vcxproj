@@ -28,12 +28,14 @@
     <ClCompile Include="code\21_10_3-fraction2todec.cpp" />
     <ClCompile Include="code\21_10_9-dataflow_to_array.cpp" />
     <ClCompile Include="code\21_11_1-distribute-candy.cpp" />
+    <ClCompile Include="code\21_11_17-maximum-product-of-word-lengths.cpp" />
+    <ClCompile Include="code\21_11_17-perfect-rectangle.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
+    <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />
     <ClCompile Include="code\21_11_6-missing-num.cpp" />
     <ClCompile Include="code\21_11_8-game-for-guest-digital.cpp" />
     <ClCompile Include="code\21_11_7-sum-for-range.cpp" />
-    <ClCompile Include="code\21_11_8-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_9-zuma-gama.cpp" />
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />

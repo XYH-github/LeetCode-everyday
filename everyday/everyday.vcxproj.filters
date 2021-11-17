@@ -75,7 +75,16 @@
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\21_11_8-vaild-perfect-square.cpp">
+    <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_9-zuma-gama.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_17-maximum-product-of-word-lengths.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_17-perfect-rectangle.cpp">
       <Filter>code</Filter>
     </ClCompile>
   </ItemGroup>
