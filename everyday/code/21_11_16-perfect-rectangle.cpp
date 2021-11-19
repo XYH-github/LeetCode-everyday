@@ -203,6 +203,22 @@ using namespace std;
 //    
 //};
 
+
+//class Solution {
+//public:
+//    bool isRectangleCover(vector<vector<int>>& rectangles) {
+//        map<pair<int, int>, int> mp;
+//        for (auto& item : rectangles) {
+//            int x = item[0], y = item[1], a = item[2], b = item[3];
+//            if (++mp[{x, y}] == 0) mp.erase({ x, y });
+//            if (--mp[{x, b}] == 0) mp.erase({ x, b });
+//            if (++mp[{a, b}] == 0) mp.erase({ a, b });
+//            if (--mp[{a, y}] == 0) mp.erase({ a, y });
+//        }
+//        return mp.size() == 4 && mp.begin()->second == 1;
+//    }
+//};
+
 namespace std {
     template<> struct hash<pair<int, int>> {
         inline size_t operator()(const pair<int, int> v) const {
@@ -211,6 +227,7 @@ namespace std {
         }
     };
 }
+
 class Solution {
 public:
     bool isRectangleCover(vector<vector<int>>& rectangles) {
@@ -247,29 +264,29 @@ public:
         bool flag4 = false;
 
 
-        for (const auto& [k, v] : mp) {
-            if (v == 9 || v == 6) {
+        for (const auto& index : mp) {
+            if (index.second == 9 || index.second == 6) {
                 return false;
             }
-            if (v == 1) {
+            if (index.second == 1) {
                 if (flag1) {
                     return false;
                 }
                 flag1 = true;
             }
-            if (v == 2) {
+            if (index.second == 2) {
                 if (flag2) {
                     return false;
                 }
                 flag2 = true;
             }
-            if (v == 4) {
+            if (index.second == 4) {
                 if (flag3) {
                     return false;
                 }
                 flag3 = true;
             }
-            if (v == 8) {
+            if (index.second == 8) {
                 if (flag4) {
                     return false;
                 }

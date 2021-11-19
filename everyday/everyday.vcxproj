@@ -29,7 +29,7 @@
     <ClCompile Include="code\21_10_9-dataflow_to_array.cpp" />
     <ClCompile Include="code\21_11_1-distribute-candy.cpp" />
     <ClCompile Include="code\21_11_17-maximum-product-of-word-lengths.cpp" />
-    <ClCompile Include="code\21_11_17-perfect-rectangle.cpp" />
+    <ClCompile Include="code\21_11_16-perfect-rectangle.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
     <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />
@@ -43,11 +43,14 @@
     <ClCompile Include="code\21_9_2-linedlist_get_reciprocal.cpp" />
     <ClCompile Include="code\21_9_30-area_for_retang.cpp" />
     <ClCompile Include="code\21_9_5-rank7_gene_rank10.cpp" />
+    <ClCompile Include="code\BinaryTree.cpp" />
     <ClCompile Include="code\LinkList.cpp" />
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\Print.cpp" />
+    <ClCompile Include="code\template.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\BinaryTree.h" />
     <ClInclude Include="code\LinkList.h" />
     <ClInclude Include="code\Print.h" />
   </ItemGroup>
