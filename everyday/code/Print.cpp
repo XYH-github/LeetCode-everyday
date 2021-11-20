@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -43,5 +44,12 @@ public:
 			if (index == ']')
 				index = '}';
 		}
+	}
+
+	static void StringRemoveSpace(string& str) {
+		size_t index = 0;
+		if (!str.empty())
+			while ((index = str.find(" ", index)) != string::npos)
+				str.erase(index, 1);
 	}
 };

@@ -30,6 +30,8 @@
     <ClCompile Include="code\21_11_1-distribute-candy.cpp" />
     <ClCompile Include="code\21_11_17-maximum-product-of-word-lengths.cpp" />
     <ClCompile Include="code\21_11_16-perfect-rectangle.cpp" />
+    <ClCompile Include="code\21_11_18-binary-tree-tilt.cpp" />
+    <ClCompile Include="code\21_11_19-integer-replacement.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
     <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />

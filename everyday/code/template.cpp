@@ -1,2 +1,2 @@
 #include "BinaryTree.cpp"
-template class BinaryTree<char>;
+template class BinaryTree<int>;

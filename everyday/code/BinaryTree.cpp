@@ -109,25 +109,24 @@ void BinaryTree<T>::CreateBinTreePreOrder(TreeNode<T>*& cur) {
 }
 
 template<typename T>
-void BinaryTree<T>::CreateBinTreePreOrder(TreeNode<T>*& cur, T* table)
+void BinaryTree<T>::CreateBinTreePreOrder(TreeNode<T>*& cur, T*& table)
 {
 	if (*table != RefValue) {
 		cur = new TreeNode<T>(*table);
-		table = table + 2;
+		table ++;
 		CreateBinTreePreOrder(cur->left, table);
-		table = table + 2;
 		CreateBinTreePreOrder(cur->right, table);
 	}
 	else {
 		cur = NULL;
-		table = table + 2;
+		table = table++;
 	}
 }
 
 
 template <typename T>
 void BinaryTree<T>::CreateBinTreeByPre_In(TreeNode<T>*& cur, const T* pre, const T* in, int n) {
-	if (n <= 0) {
+	if (n == 0) {
 		cur = NULL;
 		return;
 	}
@@ -136,7 +135,7 @@ void BinaryTree<T>::CreateBinTreeByPre_In(TreeNode<T>*& cur, const T* pre, const
 		k++;
 	cur = new TreeNode<T>(in[k]);
 	CreateBinTreeByPre_In(cur->left, pre+1, in, k);
-	CreateBinTreeByPre_In(cur->left, pre+k+1, in+k+1, n-k-1);
+	CreateBinTreeByPre_In(cur->right, pre+k+1, in+k+1, n-k-1);
 }
 
 template <typename T>
@@ -152,6 +151,52 @@ void BinaryTree<T>::CreateBinTreeByPos_In(TreeNode<T>*& cur, const T* pos, const
 		k++;
 	CreateBinTreeByPos_In(cur->left, pos, in, k);
 	CreateBinTreeByPos_In(cur->right, pos + k, in + k + 1, n - k - 1);
+}
+
+template<typename T>
+void BinaryTree<T>::CreateBinTreeLevelOrder(TreeNode<T>*& root)
+{
+	queue<TreeNode<T>*> queue;
+	T ch;
+	cin >> ch;
+	root = new TreeNode<T>(ch);
+	queue.push(root);
+	cin >> ch;
+	while (ch != RefValue) {
+		TreeNode<T>* p = queue.front();
+		queue.pop();
+		p->left = new TreeNode<T>(ch);
+		queue.push(p->left);
+		cin >> ch;
+		if (ch == RefValue)
+			break;
+		p->right = new TreeNode<T>(ch);
+		queue.push(p->right);
+		cin >> ch;
+	}
+}
+
+template<typename T>
+void BinaryTree<T>::CreateBinTreeLevelOrder(TreeNode<T>*& root, T* table, int n)
+{
+	queue<TreeNode<T>*> queue;
+	T *ch = table;
+	int temp = 0;
+	root = new TreeNode<T>(*ch);
+	queue.push(root);
+	ch++, temp++;
+	while (temp < n) {
+		TreeNode<T>* p = queue.front();
+		queue.pop();
+		p->left = new TreeNode<T>(*ch);
+		queue.push(p->left);
+		ch++, temp++;
+		if (temp >= n)
+			break;
+		p->right = new TreeNode<T>(*ch);
+		queue.push(p->right);
+		ch++, temp++;
+	}
 }
 
 
@@ -252,12 +297,12 @@ template<typename T>
 void BinaryTree<T>::PreOrderAndEnd(TreeNode<T>* cur)
 {
 	if (cur != NULL) {
-		cout << cur->val << " ";
+		cout << cur->val << ", ";
 		PreOrderAndEnd(cur->left);
 		PreOrderAndEnd(cur->right);
 	}
 	else
-		cout << RefValue << " ";
+		cout << RefValue << ", ";
 }
 
 template<typename T>
@@ -313,6 +358,53 @@ int BinaryTree<T>::Height(TreeNode<T>* cur)
 }
 
 template<typename T>
+int BinaryTree<T>::NodeTilt(TreeNode<T>* cur)
+{
+	return abs(SunNode(cur->right) - SunNode(cur->left));
+}
+
+template<typename T>
+int BinaryTree<T>::SunNode(TreeNode<T>* cur)
+{
+	if (cur == NULL)
+		return 0;
+	return cur->val + SunNode(cur->left) + SunNode(cur->right);
+}
+
+template<typename T>
+int BinaryTree<T>::OrderFindTilt(TreeNode<T>* cur)
+{
+	stack<TreeNode<T>*> stk;
+	TreeNode<T>* p = cur;
+	int result = 0;
+	while (p != NULL || !stk.empty()) {
+		while (p != NULL) {
+			result += NodeTilt(p);
+			stk.push(p);
+			p = p->left;
+		}
+		if (!stk.empty()) {
+			p = stk.top();
+			stk.pop();
+			p = p->right;
+		}
+	}
+	return result;
+}
+
+template<typename T>
+int BinaryTree<T>::OrderRecTilt(TreeNode<T>* cur, int& result)
+{
+	if (cur == NULL)
+		return 0;
+	int sumleft = OrderRecTilt(cur->left, result);
+	int sumright = OrderRecTilt(cur->right, result);
+	result += abs(sumleft - sumright);
+	return sumleft + sumright + cur->val;
+
+}
+
+template<typename T>
 void BinaryTree<T>::PrintBinTree(TreeNode<T>* cur)
 {
 	if (cur != NULL) {
@@ -327,6 +419,34 @@ void BinaryTree<T>::PrintBinTree(TreeNode<T>* cur)
 			cout << ')';
 		}
 	}
+}
+
+template<typename T>
+void BinaryTree<T>::PrintBinTreeNoRec(TreeNode<T>* cur)
+{
+	stack<TreeNode<T>*> stk;
+	TreeNode<T>* p = cur;
+	do {
+		if (p != NULL) 
+			cout << p->val;
+		if (p != NULL && (p->left != NULL || p->right != NULL)) {
+			cout << '(';
+			stk.push(NULL);
+			if (p->right != NULL)
+				stk.push(p->right);
+			p = p->left;
+		}
+		else
+		{
+			TreeNode<T>* tmp = stk.top();
+			stk.pop();
+			if (tmp == NULL)
+				cout << ")";
+			else 
+				cout << ",";
+			p = tmp;
+		}
+	} while (!stk.empty());
 }
 
 template<typename T>
