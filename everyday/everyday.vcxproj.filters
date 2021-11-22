@@ -99,6 +99,30 @@
     <ClCompile Include="code\21_11_19-integer-replacement.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_11_20-longest-harmonious-subsequence.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\NAryTree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_21-maximux-depth-narytree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_15-shuffle-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_22-bulb-switcher.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_14-map-sum-pairs.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_13-detect-capital.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_12-guess-number-high-or-lower-ii.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
@@ -108,6 +132,9 @@
       <Filter>code</Filter>
     </ClInclude>
     <ClInclude Include="code\BinaryTree.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\NAryTree.h">
       <Filter>code</Filter>
     </ClInclude>
   </ItemGroup>

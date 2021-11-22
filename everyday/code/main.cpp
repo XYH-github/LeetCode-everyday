@@ -22,7 +22,11 @@
 //#include "21_11_4-vaild-perfect-square.cpp"
 //#include "21_11_17-maximum-product-of-word-lengths.cpp"
 //#include "21_11_16-perfect-rectangle.cpp"
-#include "21_11_19-integer-replacement.cpp"
+//#include "21_11_19-integer-replacement.cpp"
+//#include "21_11_22-bulb-switcher.cpp"
+//#include "21_11_13-detect-capital.cpp"
+//#include "21_11_12-guess-number-high-or-lower-ii.cpp"
+#include "21_11_11-k-inverse-pairs-array.cpp"
 
 
 int main(void) {
@@ -31,11 +35,6 @@ int main(void) {
 	cout << input << endl;*/
 
 	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	int num = 4;
-	Solution temp;
-	int result = temp.integerReplacement(num);
-	cout << result << endl;
-	
 	
 }
 
