@@ -28,6 +28,8 @@
     <ClCompile Include="code\21_10_3-fraction2todec.cpp" />
     <ClCompile Include="code\21_10_9-dataflow_to_array.cpp" />
     <ClCompile Include="code\21_11_1-distribute-candy.cpp" />
+    <ClCompile Include="code\21_11_10-teemo-attacking.cpp" />
+    <ClCompile Include="code\21_11_11-k-inverse-pairs-array.cpp" />
     <ClCompile Include="code\21_11_12-guess-number-high-or-lower-ii.cpp" />
     <ClCompile Include="code\21_11_13-detect-capital.cpp" />
     <ClCompile Include="code\21_11_14-map-sum-pairs.cpp" />
@@ -39,6 +41,7 @@
     <ClCompile Include="code\21_11_21-maximux-depth-narytree.cpp" />
     <ClCompile Include="code\21_11_22-bulb-switcher.cpp" />
     <ClCompile Include="code\21_11_15-shuffle-array.cpp" />
+    <ClCompile Include="code\21_11_23-buddy-strings.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
     <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />

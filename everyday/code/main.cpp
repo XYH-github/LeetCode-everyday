@@ -26,7 +26,9 @@
 //#include "21_11_22-bulb-switcher.cpp"
 //#include "21_11_13-detect-capital.cpp"
 //#include "21_11_12-guess-number-high-or-lower-ii.cpp"
-#include "21_11_11-k-inverse-pairs-array.cpp"
+//#include "21_11_11-k-inverse-pairs-array.cpp"
+//#include "21_11_10-teemo-attacking.cpp"
+#include "21_11_23-buddy-strings.cpp"
 
 
 int main(void) {
@@ -35,7 +37,10 @@ int main(void) {
 	cout << input << endl;*/
 
 	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	
+	string s = "aaaaaaabc", goal = "aaaaaaacb";
+	Solution temp;
+	bool result = temp.buddyStrings(s, goal);
+	cout << result << endl;
 }
 
 

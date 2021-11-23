@@ -60,6 +60,7 @@ int n = 10;
     int result = temp.getMoneyAmount(n);
     cout << result << endl;
 
+
 */
 #include <vector>
 using namespace std;

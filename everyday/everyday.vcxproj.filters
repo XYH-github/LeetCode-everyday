@@ -123,6 +123,15 @@
     <ClCompile Include="code\21_11_12-guess-number-high-or-lower-ii.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_11_11-k-inverse-pairs-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_10-teemo-attacking.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_23-buddy-strings.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
