@@ -28,7 +28,9 @@
 //#include "21_11_12-guess-number-high-or-lower-ii.cpp"
 //#include "21_11_11-k-inverse-pairs-array.cpp"
 //#include "21_11_10-teemo-attacking.cpp"
-#include "21_11_23-buddy-strings.cpp"
+//#include "21_11_23-buddy-strings.cpp"
+//#include "21_10_29-self-crossing.cpp"
+#include "21_11_25-pig-die.cpp"
 
 
 int main(void) {
@@ -37,9 +39,9 @@ int main(void) {
 	cout << input << endl;*/
 
 	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	string s = "aaaaaaabc", goal = "aaaaaaacb";
+	int buckets = 4, minutesToDie = 15, minutesToTest = 30;
 	Solution temp;
-	bool result = temp.buddyStrings(s, goal);
+	int result = temp.poorPigs(buckets, minutesToDie, minutesToTest);
 	cout << result << endl;
 }
 

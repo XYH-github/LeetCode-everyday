@@ -132,6 +132,12 @@
     <ClCompile Include="code\21_11_23-buddy-strings.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_10_29-self-crossing.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_25-pig-die.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

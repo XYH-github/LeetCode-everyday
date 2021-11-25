@@ -34,11 +34,126 @@
 
 */
 #include <vector>
+#include <algorithm>
+#include <map>
 using namespace std;
+
+//class Solution {
+//public:
+//    bool isSelfCrossing(vector<int>& distance) {
+//        int length = distance.size();
+//        map<int, vector<vector<int>>> vertival_map;
+//        map<int, vector<vector<int>>> horizontal_map;
+//        vector<int> pre = { 0, 0, 0 };
+//        pair<int, int> point = make_pair(0, 0);
+//        for (int i = 0; i < length; ++i) {
+//            vector<int> cur;
+//            if (i % 4 == 0) {
+//                cur = { point.first, point.second, point.second + distance[i] };
+//                point.second += distance[i];
+//            }
+//            else if (i % 4 == 1) {
+//                cur = { point.second, point.first - distance[i], point.first };
+//                point.first -= distance[i];
+//            }
+//            else if (i % 4 == 2) {
+//                cur = { point.first, point.second - distance[i], point.second };
+//                point.second -= distance[i];
+//            }
+//            else{
+//                cur = { point.second, point.first, point.first + distance[i] };
+//                point.first += distance[i];
+//            }
+//            if (i % 2 == 0) {
+//                map<int, vector<vector<int>>>::iterator iter = horizontal_map.begin();
+//                while (iter != horizontal_map.end() && iter->first < cur[1])
+//                    iter++;
+//                while (iter != horizontal_map.end() && iter->first <= cur[2]) {
+//                    for (auto index : iter->second)
+//                        if (index[0] <= cur[0] && index[1] >= cur[0])
+//                            return true;
+//                    iter++;
+//                }
+//                if (horizontal_map.count(pre[0]))
+//                    horizontal_map[pre[0]].push_back({pre[1], pre[2]});
+//                else {
+//                    vector<vector<int>> lines;
+//                    lines.push_back({ pre[1], pre[2] });
+//                    horizontal_map[pre[0]] = lines;
+//                }
+//                pre = cur;
+//            }
+//            else {
+//                map<int, vector<vector<int>>>::iterator iter = vertival_map.begin();
+//                while (iter != vertival_map.end() && iter->first < cur[1])
+//                    iter++;
+//                while (iter != vertival_map.end() && iter->first <= cur[2]) {
+//                    for (auto index : iter->second)
+//                        if (index[0] <= cur[0] && index[1] >= cur[0])
+//                            return true;
+//                    iter++;
+//                }
+//                if (vertival_map.count(pre[0]))
+//                    vertival_map[pre[0]].push_back({ pre[1], pre[2] });
+//                else {
+//                    vector<vector<int>> lines;
+//                    lines.push_back({ pre[1], pre[2] });
+//                    vertival_map[pre[0]] = lines;
+//                }
+//                pre = cur;
+//            }
+//        }
+//        return false;
+//    }
+//};
+
+//class Solution {
+//public:
+//	bool isSelfCrossing(vector<int>& distance) {
+//		int n = distance.size();
+//		for (int i = 3; i < n; ++i) {
+//			if (distance[i] >= distance[i - 2] && distance[i - 1] <= distance[i - 3])
+//				return true;
+//			if (i == 4 && (distance[3] == distance[1]
+//				&& distance[4] >= distance[2] - distance[0]))
+//				return true;
+//			if (i >= 5 && (distance[i - 3] - distance[i - 5] <= distance[i - 1]
+//				&& distance[i - 1] <= distance[i - 3]
+//				&& distance[i] >= distance[i - 2] - distance[i - 4]
+//				&& distance[i - 2] > distance[i - 4]))
+//				return true;
+//		}
+//		return false;
+//	}
+//};
 
 class Solution {
 public:
     bool isSelfCrossing(vector<int>& distance) {
+        int n = distance.size();
 
+        // 处理第 1 种情况
+        int i = 0;
+        while (i < n && (i < 2 || distance[i] > distance[i - 2])) {
+            ++i;
+        }
+
+        if (i == n) {
+            return false;
+        }
+
+        // 处理第 j 次移动的情况
+        if ((i == 3 && distance[i] == distance[i - 2])
+            || (i >= 4 && distance[i] >= distance[i - 2] - distance[i - 4])) {
+            distance[i - 1] -= distance[i - 3];
+        }
+        ++i;
+
+        // 处理第 2 种情况
+        while (i < n && distance[i] < distance[i - 2]) {
+            ++i;
+        }
+
+        return i != n;
     }
 };

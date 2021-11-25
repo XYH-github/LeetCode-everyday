@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\21_10_11-num_to_english_format.cpp" />
+    <ClCompile Include="code\21_10_29-self-crossing.cpp" />
     <ClCompile Include="code\21_10_30-single-number.cpp" />
     <ClCompile Include="code\21_10_31-words-for-keyboard.cpp" />
     <ClCompile Include="code\21_10_8-get_repeat_form_dna.cpp" />
@@ -42,6 +43,7 @@
     <ClCompile Include="code\21_11_22-bulb-switcher.cpp" />
     <ClCompile Include="code\21_11_15-shuffle-array.cpp" />
     <ClCompile Include="code\21_11_23-buddy-strings.cpp" />
+    <ClCompile Include="code\21_11_25-pig-die.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
     <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />
