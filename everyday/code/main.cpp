@@ -30,7 +30,13 @@
 //#include "21_11_10-teemo-attacking.cpp"
 //#include "21_11_23-buddy-strings.cpp"
 //#include "21_10_29-self-crossing.cpp"
-#include "21_11_25-pig-die.cpp"
+//#include "21_11_25-pig-die.cpp"
+//#include "21_11_29-k-th-smallest-prime-fraction.cpp"
+//#include "21_12_6-truncate-sentence.cpp"
+//#include "21_12_5-super-pow.cpp"
+//#include "21_12_7-coloring-a-border.cpp"
+//#include "21_12_4-ransom-note.cpp"
+#include "21_12_3-maximize-sum-of-array-after-k-negations.cpp"
 
 
 int main(void) {
@@ -39,10 +45,12 @@ int main(void) {
 	cout << input << endl;*/
 
 	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	int buckets = 4, minutesToDie = 15, minutesToTest = 30;
+	vector<int> nums = { -8, 3, -5, -3, -5, -2 };
+	int k = 6;
 	Solution temp;
-	int result = temp.poorPigs(buckets, minutesToDie, minutesToTest);
+	int result = temp.largestSumAfterKNegations(nums, k);
 	cout << result << endl;
+	
 }
 
 

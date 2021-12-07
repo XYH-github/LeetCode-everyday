@@ -51,6 +51,11 @@
     <ClCompile Include="code\21_11_8-game-for-guest-digital.cpp" />
     <ClCompile Include="code\21_11_7-sum-for-range.cpp" />
     <ClCompile Include="code\21_11_9-zuma-gama.cpp" />
+    <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp" />
+    <ClCompile Include="code\21_12_4-ransom-note.cpp" />
+    <ClCompile Include="code\21_12_5-super-pow.cpp" />
+    <ClCompile Include="code\21_12_6-truncate-sentence.cpp" />
+    <ClCompile Include="code\21_12_7-coloring-a-border.cpp" />
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />
     <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp" />

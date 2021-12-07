@@ -32,6 +32,11 @@
 1 <= buckets <= 1000
 1 <= minutesToDie <= minutesToTest <= 100
 
+int buckets = 4, minutesToDie = 15, minutesToTest = 30;
+    Solution temp;
+    int result = temp.poorPigs(buckets, minutesToDie, minutesToTest);
+    cout << result << endl;
+
 */
 #include <math.h>
 #include <vector>

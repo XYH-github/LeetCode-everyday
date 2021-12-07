@@ -138,6 +138,21 @@
     <ClCompile Include="code\21_11_25-pig-die.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_12_6-truncate-sentence.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_5-super-pow.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_7-coloring-a-border.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_4-ransom-note.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
