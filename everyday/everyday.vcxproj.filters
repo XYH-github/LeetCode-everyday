@@ -153,6 +153,15 @@
     <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_12_8-maximum-sum-of-3-non-overlapping-subarrays.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_2-relative-ranks.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_1-consecutive-characters.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

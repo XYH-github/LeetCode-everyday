@@ -34,31 +34,87 @@
 
 链接：https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations
 
+vector<int> nums = { -8, 3, -5, -3, -5, -2 };
+	int k = 6;
+	Solution temp;
+	int result = temp.largestSumAfterKNegations(nums, k);
+	cout << result << endl;
+
 */
 #include <vector>
 #include <algorithm>
+#include <unordered_map>
+#include <numeric>
+#include <queue>
 using namespace std;
+
+//class Solution {
+//public:
+//    int largestSumAfterKNegations(vector<int>& nums, int k) {
+//        sort(nums.begin(), nums.end(), less<int>());
+//        int length = nums.size();
+//        int result = 0;
+//        int poi = 0;
+//        while (nums[poi] < 0 && poi < length && k-- > 0)
+//            result -= nums[poi++];
+//        if (k % 2 == 1 && poi == 0)
+//            nums[poi] = -nums[poi];
+//        if (k % 2 == 1 && poi == length)
+//            result += nums[poi - 1] + nums[poi - 1];
+//        if (k % 2 == 1 && poi != 0 && poi != length)
+//            if (-nums[poi - 1] >= nums[poi])
+//                nums[poi] = -nums[poi];
+//            else
+//                result += nums[poi - 1] + nums[poi - 1];
+//        while (poi < length)
+//            result += nums[poi++];
+//        return result;
+//    }
+//};
+
+//class Solution {
+//public:
+//	int largestSumAfterKNegations(vector<int>& nums, int k) {
+//		unordered_map<int, int> freq;
+//		for (int num : nums)
+//			freq[num] += 1;
+//		int ans = accumulate(nums.begin(), nums.end(), 0);
+//		for (int i = -100; i < 0; ++i) {
+//			if (freq[i]) {
+//				int ops = min(k, freq[i]);
+//				ans += (-i) * ops * 2;
+//				freq[i] -= ops;
+//				freq[-i] += ops;
+//				k -= ops;
+//				if (k == 0)
+//					break;
+//			}
+//		}
+//		if (k > 0 && k % 2 == 1 && !freq[0])
+//			for (int i = 1; i <= 100; ++i)
+//				if (freq[i]) {
+//					ans -= i * 2;
+//					break;
+//				}
+//		return ans;
+//	}
+//};
 
 class Solution {
 public:
-    int largestSumAfterKNegations(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end(), less<int>());
-        int length = nums.size();
-        int result = 0;
-        int poi = 0;
-        while (nums[poi] < 0 && poi < length && k-- > 0)
-            result -= nums[poi++];
-        if (k % 2 == 1 && poi == 0)
-            nums[poi] = -nums[poi];
-        if (k % 2 == 1 && poi == length)
-            result += nums[poi - 1] + nums[poi - 1];
-        if (k % 2 == 1 && poi != 0 && poi != length)
-            if (-nums[poi - 1] >= nums[poi])
-                nums[poi] = -nums[poi];
-            else
-                result += nums[poi - 1] + nums[poi - 1];
-        while (poi < length)
-            result += nums[poi++];
-        return result;
-    }
+	int largestSumAfterKNegations(vector<int>& nums, int k) {
+		priority_queue<int, vector<int>, greater<int>> queue;
+		int result = 0;
+		for (int index : nums) {
+			queue.push(index);
+			result += index;
+		}
+		while (k--) {
+			int num = queue.top();
+			queue.pop();
+			result -= num * 2;
+			queue.push(-num);
+		}
+		return result;
+	}
 };

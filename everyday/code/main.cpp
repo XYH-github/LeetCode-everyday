@@ -36,7 +36,10 @@
 //#include "21_12_5-super-pow.cpp"
 //#include "21_12_7-coloring-a-border.cpp"
 //#include "21_12_4-ransom-note.cpp"
-#include "21_12_3-maximize-sum-of-array-after-k-negations.cpp"
+//#include "21_12_3-maximize-sum-of-array-after-k-negations.cpp"
+//#include "21_12_8-maximum-sum-of-3-non-overlapping-subarrays.cpp"
+//#include "21_12_2-relative-ranks.cpp"
+#include "21_12_1-consecutive-characters.cpp"
 
 
 int main(void) {
@@ -45,12 +48,10 @@ int main(void) {
 	cout << input << endl;*/
 
 	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	vector<int> nums = { -8, 3, -5, -3, -5, -2 };
-	int k = 6;
+	string s = "hooraaaaaaaaaaay";
 	Solution temp;
-	int result = temp.largestSumAfterKNegations(nums, k);
+	int result = temp.maxPower(s);
 	cout << result << endl;
-	
 }
 
 
