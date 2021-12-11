@@ -31,13 +31,53 @@ arr 中的所有数字 互不相同 ，且按 严格递增 排序
 
 链接：https://leetcode-cn.com/problems/k-th-smallest-prime-fraction
 
+vector<int> arr = { 1,2,3,5 };
+    int k = 3;
+    Solution temp;
+    vector<int> result = temp.kthSmallestPrimeFraction(arr, k);
+    Print<int>::PrintOneDemionVector(result);
+
 */
 #include <vector>
+#include <algorithm>
+#include <queue>
 using namespace std;
+
+//class Solution {
+//public:
+//    vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {
+//        int n = arr.size();
+//        vector<pair<int, int>> frac;
+//        for (int i = 0; i < n; ++i) {
+//            for (int j = i + 1; j < n; ++j) {
+//                frac.emplace_back(arr[i], arr[j]);
+//            }
+//        }
+//        sort(frac.begin(), frac.end(), [&](const auto& x, const auto& y) {
+//            return x.first * y.second < x.second* y.first;
+//            });
+//        return { frac[k - 1].first, frac[k - 1].second };
+//    }
+//};
+
 
 class Solution {
 public:
     vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {
-
+        int n = arr.size();
+        auto cmp = [&](const pair<int, int>& a, const pair<int, int>& b) {
+            return arr[a.first] * arr[b.second] > arr[a.second] * arr[b.first];
+        };
+        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> queue(cmp);
+        for (int i = 0; i < arr.size() - 1; ++i)
+            queue.emplace(i, arr.size() - 1);
+        pair<int, int> poi;
+        for (int i = 0; i < k; ++i) {
+            poi = queue.top();
+            queue.pop();
+            if (poi.second - poi.first > 1)
+                queue.emplace(poi.first, poi.second - 1);
+        }
+        return { arr[poi.first], arr[poi.second] };
     }
 };

@@ -162,6 +162,21 @@
     <ClCompile Include="code\21_12_1-consecutive-characters.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_12_9-valid-tic-tac-toe-state.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_30-nth-digit.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_29-k-th-smallest-prime-fraction.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_29-hebing-paixulianbiao.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_11_28-find-all-anagrams-in-a-string.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

@@ -39,7 +39,13 @@
 //#include "21_12_3-maximize-sum-of-array-after-k-negations.cpp"
 //#include "21_12_8-maximum-sum-of-3-non-overlapping-subarrays.cpp"
 //#include "21_12_2-relative-ranks.cpp"
-#include "21_12_1-consecutive-characters.cpp"
+//#include "21_12_1-consecutive-characters.cpp"
+//#include "21_12_9-valid-tic-tac-toe-state.cpp"
+//#include "21_11_30-nth-digit.cpp"
+//#include "21_11_29-hebing-paixulianbiao.cpp"
+//#include "21_11_28-find-all-anagrams-in-a-string.cpp"
+#include "21_11_27-random-flip-matrix.cpp"
+
 
 
 int main(void) {
@@ -47,11 +53,8 @@ int main(void) {
 	Print<string>::VectorFormTrans(input);
 	cout << input << endl;*/
 
-	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} };
-	string s = "hooraaaaaaaaaaay";
-	Solution temp;
-	int result = temp.maxPower(s);
-	cout << result << endl;
+	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} }
+	
 }
 
 

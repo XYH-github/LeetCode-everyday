@@ -1,7 +1,7 @@
 #include "LinkList.h"
 
 LinkList::LinkList() {
-	this->m_head = new ListNode(0);
+	this->m_head = new ListNode;
 	this->m_size = 0;
 }
 
@@ -12,9 +12,7 @@ LinkList::~LinkList() {
 		del = temp;
 		temp = temp->next;
 		free(del);
-	}
-	
-	
+	}	
 }
 
 void LinkList::CreateLinkList(int n, std::vector<int> array) {
@@ -48,6 +46,7 @@ void LinkList::PrintLinkList(ListNode* ptr) {
 		std::cout << " -> " << temp->val;
 		temp = temp->next;
 	}
+	std::cout << std::endl;
 }
 
 

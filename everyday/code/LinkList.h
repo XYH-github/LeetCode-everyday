@@ -6,7 +6,11 @@
 struct ListNode {
 	int val;
 	ListNode* next;
+	ListNode() {};
 	ListNode(int x) : val(x), next(NULL) {};
+	bool operator < (const ListNode& rhs) const {
+		return val > rhs.val;
+	}
 };
 
 class LinkList {

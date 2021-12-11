@@ -44,7 +44,11 @@
     <ClCompile Include="code\21_11_15-shuffle-array.cpp" />
     <ClCompile Include="code\21_11_23-buddy-strings.cpp" />
     <ClCompile Include="code\21_11_25-pig-die.cpp" />
+    <ClCompile Include="code\21_11_28-find-all-anagrams-in-a-string.cpp" />
+    <ClCompile Include="code\21_11_29-hebing-paixulianbiao.cpp" />
+    <ClCompile Include="code\21_11_29-k-th-smallest-prime-fraction.cpp" />
     <ClCompile Include="code\21_11_3-rainwater-connection.cpp" />
+    <ClCompile Include="code\21_11_30-nth-digit.cpp" />
     <ClCompile Include="code\21_11_4-vaild-perfect-square.cpp" />
     <ClCompile Include="code\21_11_5-longest-arithmetic-sunsequence.cpp" />
     <ClCompile Include="code\21_11_6-missing-num.cpp" />
@@ -59,6 +63,7 @@
     <ClCompile Include="code\21_12_6-truncate-sentence.cpp" />
     <ClCompile Include="code\21_12_7-coloring-a-border.cpp" />
     <ClCompile Include="code\21_12_8-maximum-sum-of-3-non-overlapping-subarrays.cpp" />
+    <ClCompile Include="code\21_12_9-valid-tic-tac-toe-state.cpp" />
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />
     <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp" />

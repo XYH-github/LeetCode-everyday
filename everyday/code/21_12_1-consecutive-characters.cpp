@@ -37,6 +37,10 @@ s 只包含小写英文字母。
 
 链接：https://leetcode-cn.com/problems/consecutive-characters
 
+string s = "hooraaaaaaaaaaay";
+    Solution temp;
+    int result = temp.maxPower(s);
+    cout << result << endl;
 */
 #include <string>
 using namespace std;
