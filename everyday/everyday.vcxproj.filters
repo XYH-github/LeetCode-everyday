@@ -294,6 +294,15 @@
     <ClCompile Include="code\22_2_12-number-of-enclaves.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_2_13-maximum-number-of-balloons.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_14-single-element-in-a-sorted-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_15-lucky-numbers-in-a-matrix.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

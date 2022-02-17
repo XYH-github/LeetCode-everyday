@@ -101,6 +101,9 @@
     <ClCompile Include="code\22_2_10-simplified-fractions.cpp" />
     <ClCompile Include="code\22_2_11-minimum-difference-between-highest-and-lowest-of-k-scores.cpp" />
     <ClCompile Include="code\22_2_12-number-of-enclaves.cpp" />
+    <ClCompile Include="code\22_2_13-maximum-number-of-balloons.cpp" />
+    <ClCompile Include="code\22_2_14-single-element-in-a-sorted-array.cpp" />
+    <ClCompile Include="code\22_2_15-lucky-numbers-in-a-matrix.cpp" />
     <ClCompile Include="code\22_2_2-reverse-prefix-of-word.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
