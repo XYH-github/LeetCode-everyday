@@ -44,17 +44,59 @@
 //#include "21_11_30-nth-digit.cpp"
 //#include "21_11_29-hebing-paixulianbiao.cpp"
 //#include "21_11_28-find-all-anagrams-in-a-string.cpp"
-#include "21_11_27-random-flip-matrix.cpp"
+//#include "21_12_19-find-the-town-judeg.cpp"
+//#include "21_12_21-day-of-the-year.cpp"
+//#include "22_1_1-convert-1d-array-into-2d-array.cpp"
+//#include "21_12_20-heaters.cpp"
+//#include "22_1_2-elimination-game.cpp"
+//#include "22_1_7-maximum-nesting-depth-of-the-parentheses.cpp"
+//#include "22_1_9-slowest-key.cpp"
+//#include "22_1_10-additive-number.cpp"
+//#include "22_1_11-escape-a-large-maze.cpp"
+//#include "22_1_15-calculate-money-in-leetcode-bank.cpp"
+//#include "22_1_16-linked-list-random-node.cpp"
+//#include "22_1_18-minimum-time-difference.cpp"
+//#include "22_1_19-contains-duplicate-ii.cpp"
+//#include "22_1_17-count-vowels-permutation.cpp"
+//#include "22_1_8-gray-code.cpp"
+//#include "22_1_4-cat-and-mouse.cpp"
+//#include "22_1_20-stone-game-ix.cpp"
+//#include "22_1_26-detect-squares.cpp"
+//#include "22_1_25-count-of-matches-in-tournament.cpp"
+//#include "22_1_24-second-minimum-time-to-reach-destination.cpp"
+//#include "22_1_27-number-of-valid-words-in-a-sentence.cpp"
+//#include "22_1_28-the-number-of-weak-characters-in-the-game.cpp"
+//#include "22_1_30-uncommon-words-from-two-sentences.cpp"
+//#include "22_1_23-stock-price-fluctuation.cpp"
+//#include "22_1_29-map-of-highest-peak.cpp"
+//#include "22_2_2-reverse-prefix-of-word.cpp"
+//#include "22_2_1-zui-chang-de-mei-hao-zi-zi-fu-chuan-by-l-4l1t.cpp"
+//#include "22_2_1-longest-substring-with-at-least-k-repeating-characters.cpp"
+//#include "22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp"
+//#include "22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp"
+//#include "22_2_5-path-with-maximum-gold.cpp"
+//#include "22_2_6-sum-of-unique-elements.cpp"
+//#include "22_2_7-longest-happy-string.cpp"
+//#include "22_2_8-grid-illumination.cpp"
+//#include "22_2_9-count-number-of-pairs-with-absolute-difference-k.cpp"
+//#include "22_2_10-simplified-fractions.cpp"
+//#include "22_2_11-minimum-difference-between-highest-and-lowest-of-k-scores.cpp"
+//#include "22_1_31-number-of-steps-to-reduce-a-number-to-zero.cpp"
+#include "22_2_12-number-of-enclaves.cpp"
+
+//#include "21_11_27-random-flip-matrix.cpp"
+
+
 
 
 
 int main(void) {
-	/*string input = "[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]];";
-	Print<string>::VectorFormTrans(input);
-	cout << input << endl;*/
+	//string input = "nums = [9,4,1,7];";
+	//Print<string>::VectorFormTrans(input);
+	//cout << input << endl;
 
-	//vector<vector<int>> num = { {1,1,3,3},{3,1,4,2},{3,2,4,4},{1,3,2,4},{2,3,3,4} }
-	
+
+
 }
 
 
