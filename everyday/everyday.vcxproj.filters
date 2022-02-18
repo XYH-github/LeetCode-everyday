@@ -303,6 +303,27 @@
     <ClCompile Include="code\22_2_15-lucky-numbers-in-a-matrix.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_2_16-number-of-ways-to-reconstruct-a-tree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_17-knight-probability-in-chessboard.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_18-find-center-of-star-graph.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_21-jump-game-iv.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_22-remove-palindromic-subsequences.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_12-increasing-triplet-subsequence.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_13-largest-number-at-least-twice-of-others.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

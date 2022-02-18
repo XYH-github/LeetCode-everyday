@@ -86,7 +86,14 @@
 //#include "22_2_13-maximum-number-of-balloons.cpp"
 //#include "22_2_14-single-element-in-a-sorted-array.cpp"
 //#include "22_2_15-lucky-numbers-in-a-matrix.cpp"
-#include "22_2_16-number-of-ways-to-reconstruct-a-tree.cpp"
+//unwork #include "22_2_16-number-of-ways-to-reconstruct-a-tree.cpp"
+//#include "22_2_17-knight-probability-in-chessboard.cpp"
+//#include "22_2_18-find-center-of-star-graph.cpp"
+//#include "22_1_21-jump-game-iv.cpp"
+//#include "22_1_22-remove-palindromic-subsequences.cpp"
+//#include "22_1_12-increasing-triplet-subsequence.cpp"
+//#include "22_1_13-largest-number-at-least-twice-of-others.cpp"
+#include "22_1_14-"
 
 //#include "21_11_27-random-flip-matrix.cpp"
 

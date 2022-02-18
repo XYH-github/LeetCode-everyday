@@ -76,6 +76,8 @@
     <ClCompile Include="code\22_1_1-convert-1d-array-into-2d-array.cpp" />
     <ClCompile Include="code\22_1_10-additive-number.cpp" />
     <ClCompile Include="code\22_1_11-escape-a-large-maze.cpp" />
+    <ClCompile Include="code\22_1_12-increasing-triplet-subsequence.cpp" />
+    <ClCompile Include="code\22_1_13-largest-number-at-least-twice-of-others.cpp" />
     <ClCompile Include="code\22_1_15-calculate-money-in-leetcode-bank.cpp" />
     <ClCompile Include="code\22_1_16-linked-list-random-node.cpp" />
     <ClCompile Include="code\22_1_17-count-vowels-permutation.cpp" />
@@ -83,6 +85,8 @@
     <ClCompile Include="code\22_1_19-contains-duplicate-ii.cpp" />
     <ClCompile Include="code\22_1_2-elimination-game.cpp" />
     <ClCompile Include="code\22_1_20-stone-game-ix.cpp" />
+    <ClCompile Include="code\22_1_21-jump-game-iv.cpp" />
+    <ClCompile Include="code\22_1_22-remove-palindromic-subsequences.cpp" />
     <ClCompile Include="code\22_1_23-stock-price-fluctuation.cpp" />
     <ClCompile Include="code\22_1_24-second-minimum-time-to-reach-destination.cpp" />
     <ClCompile Include="code\22_1_25-count-of-matches-in-tournament.cpp" />
@@ -104,6 +108,9 @@
     <ClCompile Include="code\22_2_13-maximum-number-of-balloons.cpp" />
     <ClCompile Include="code\22_2_14-single-element-in-a-sorted-array.cpp" />
     <ClCompile Include="code\22_2_15-lucky-numbers-in-a-matrix.cpp" />
+    <ClCompile Include="code\22_2_16-number-of-ways-to-reconstruct-a-tree.cpp" />
+    <ClCompile Include="code\22_2_17-knight-probability-in-chessboard.cpp" />
+    <ClCompile Include="code\22_2_18-find-center-of-star-graph.cpp" />
     <ClCompile Include="code\22_2_2-reverse-prefix-of-word.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
