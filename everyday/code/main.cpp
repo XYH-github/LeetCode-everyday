@@ -89,11 +89,19 @@
 //unwork #include "22_2_16-number-of-ways-to-reconstruct-a-tree.cpp"
 //#include "22_2_17-knight-probability-in-chessboard.cpp"
 //#include "22_2_18-find-center-of-star-graph.cpp"
+#include "22_2_19-pancake-sorting.cpp"
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
 //#include "22_1_12-increasing-triplet-subsequence.cpp"
 //#include "22_1_13-largest-number-at-least-twice-of-others.cpp"
-#include "22_1_14-"
+//#include "22_1_14-kth-smallest-element-in-a-sorted-matrix.cpp"
+//#include "22_1_14-ugly-number-ii.cpp"
+//#include "22_1_14-find-k-pairs-with-smallest-sums.cpp"
+//#include "22_1_3-day-of-the-week.cpp"
+//#include "22_1_5-replace-all-s-to-avoid-consecutive-repeating-characters.cpp"
+//#include "22_1_6-simplify-path.cpp"
+//#include "22_12_10-shortest-completing-word.cpp"
+
 
 //#include "21_11_27-random-flip-matrix.cpp"
 
@@ -102,9 +110,9 @@
 
 
 int main(void) {
-	//string input = "matrix = [[3,7,8],[9,11,13],[15,16,17]];";
-	//Print<string>::VectorFormTrans(input);
-	//cout << input << endl;
+	/*string input = "matrix = [[1,5,9],[10,11,13],[12,13,15]];";
+	Print<string>::VectorFormTrans(input);
+	cout << input << endl;*/
 
 
 }

@@ -324,6 +324,27 @@
     <ClCompile Include="code\22_1_13-largest-number-at-least-twice-of-others.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_1_14-find-k-pairs-with-smallest-sums.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_14-kth-smallest-element-in-a-sorted-matrix.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_14-ugly-number-ii.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_3-day-of-the-week.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_5-replace-all-s-to-avoid-consecutive-repeating-characters.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_1_6-simplify-path.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_10-shortest-completing-word.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
