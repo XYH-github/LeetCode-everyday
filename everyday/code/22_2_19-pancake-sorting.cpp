@@ -40,14 +40,31 @@ arr 中的所有整数互不相同（即，arr 是从 1 到 arr.length 整数的
 
 链接：https://leetcode-cn.com/problems/pancake-sorting
 
+    vector<int> matrix = { 3, 2, 4, 1 };
+    Solution temp;
+    vector<int> ret = temp.pancakeSort(matrix);
+    Print<int>::PrintOneDemionVector(ret);
+
 */
 
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 class Solution {
 public:
     vector<int> pancakeSort(vector<int>& arr) {
-
+        int len = arr.size();
+        vector<int> ret;
+        for (int i = 0; i < len - 1; ++i) {
+            auto iter = max_element(arr.begin(), arr.end() - i);
+            if (iter == arr.end() - i - 1)
+                continue;
+            ret.emplace_back(distance(arr.begin(), iter) + 1);
+            ret.emplace_back(len - i);
+            reverse(arr.begin(), ++iter);
+            reverse(arr.begin(), arr.end() - i);
+        }
+        return ret;
     }
 };

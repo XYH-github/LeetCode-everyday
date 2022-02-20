@@ -74,6 +74,12 @@
     <ClCompile Include="code\21_9_30-area_for_retang.cpp" />
     <ClCompile Include="code\21_9_5-rank7_gene_rank10.cpp" />
     <ClCompile Include="code\22_12_10-shortest-completing-word.cpp" />
+    <ClCompile Include="code\22_12_11-online-election.cpp" />
+    <ClCompile Include="code\22_12_12-to-lower-case.cpp" />
+    <ClCompile Include="code\22_12_13-max-increase-to-keep-city-skyline.cpp" />
+    <ClCompile Include="code\22_12_13-trapping-rain-water.cpp" />
+    <ClCompile Include="code\22_12_14-single-element-in-a-sorted-array.cpp" />
+    <ClCompile Include="code\22_12_15-lucky-numbers-in-a-matrix.cpp" />
     <ClCompile Include="code\22_1_1-convert-1d-array-into-2d-array.cpp" />
     <ClCompile Include="code\22_1_10-additive-number.cpp" />
     <ClCompile Include="code\22_1_11-escape-a-large-maze.cpp" />
@@ -118,7 +124,9 @@
     <ClCompile Include="code\22_2_16-number-of-ways-to-reconstruct-a-tree.cpp" />
     <ClCompile Include="code\22_2_17-knight-probability-in-chessboard.cpp" />
     <ClCompile Include="code\22_2_18-find-center-of-star-graph.cpp" />
+    <ClCompile Include="code\22_2_19-pancake-sorting.cpp" />
     <ClCompile Include="code\22_2_2-reverse-prefix-of-word.cpp" />
+    <ClCompile Include="code\22_2_20-1-bit-and-2-bit-characters.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
     <ClCompile Include="code\22_2_5-path-with-maximum-gold.cpp" />

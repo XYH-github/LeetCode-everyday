@@ -345,6 +345,30 @@
     <ClCompile Include="code\22_12_10-shortest-completing-word.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_2_19-pancake-sorting.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_20-1-bit-and-2-bit-characters.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_11-online-election.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_12-to-lower-case.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_13-max-increase-to-keep-city-skyline.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_13-trapping-rain-water.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_14-single-element-in-a-sorted-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_15-lucky-numbers-in-a-matrix.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
