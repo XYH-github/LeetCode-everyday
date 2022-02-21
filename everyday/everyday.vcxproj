@@ -78,6 +78,8 @@
     <ClCompile Include="code\22_12_12-to-lower-case.cpp" />
     <ClCompile Include="code\22_12_13-max-increase-to-keep-city-skyline.cpp" />
     <ClCompile Include="code\22_12_13-trapping-rain-water.cpp" />
+    <ClCompile Include="code\22_12_14-course-schedule-iii.cpp" />
+    <ClCompile Include="code\22_12_14-course-schedule.cpp" />
     <ClCompile Include="code\22_12_14-single-element-in-a-sorted-array.cpp" />
     <ClCompile Include="code\22_12_15-lucky-numbers-in-a-matrix.cpp" />
     <ClCompile Include="code\22_1_1-convert-1d-array-into-2d-array.cpp" />

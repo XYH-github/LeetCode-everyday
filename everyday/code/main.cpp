@@ -90,7 +90,7 @@
 //#include "22_2_18-find-center-of-star-graph.cpp"
 //#include "22_2_19-pancake-sorting.cpp"
 //#include "22_2_20-1-bit-and-2-bit-characters.cpp"
-//#include "22_1_21-jump-game-iv.cpp"
+#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
 //#include "22_1_12-increasing-triplet-subsequence.cpp"
 //#include "22_1_13-largest-number-at-least-twice-of-others.cpp"
@@ -106,7 +106,8 @@
 //#include "22_12_13-trapping-rain-water.cpp"
 //#include "22_12_13-max-increase-to-keep-city-skyline.cpp"
 //#include "22_12_14-single-element-in-a-sorted-array.cpp"
-#include "22_12_14-course-schedule-iii.cpp"
+//#include "22_12_14-course-schedule-iii.cpp"
+//#include "22_12_14-course-schedule.cpp"
 //#include "22_12_15-lucky-numbers-in-a-matrix.cpp"
 
 
@@ -118,9 +119,11 @@
 
 
 int main(void) {
-	//string input = "matrix = [[3,7,8],[9,11,13],[15,16,17]];";
+	//string input = "courses = [[100, 200], [200, 1300], [1000, 1250], [2000, 3200]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
+
+
 
 
 }

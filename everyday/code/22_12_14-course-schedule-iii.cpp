@@ -35,14 +35,79 @@
 
 链接：https://leetcode-cn.com/problems/course-schedule-iii
 
+    vector<vector<int>> courses = { {100, 200}, {200, 1300}, {1000, 1250}, {2000, 3200} };
+    Solution temp;
+    int ret = temp.scheduleCourse(courses);
+    cout << ret << endl;
+
 */
 
 #include <vector>
+#include <queue>
+#include <algorithm>
 using namespace std;
+
+//class Solution{
+//public:
+//    vector<int> old_vec;
+//    vector<vector<int>> all_rank;
+//    int scheduleCourse(vector<vector<int>>& courses) {
+//        int len = courses.size();
+//        old_vec = vector<int>(len);
+//        for (int i = 0; i < len; ++i)
+//            old_vec[i] = i;
+//        //dfs(0, len - 1);
+//        do {
+//            all_rank.emplace_back(old_vec);
+//        } while (next_permutation(old_vec.begin(), old_vec.end()));
+//        int ret = 0;
+//        for (vector<int> index : all_rank) {
+//            int now_time = 0;
+//            int now_num = 0;
+//            for (int i = 0; i < len; ++i) {
+//                if (courses[index[i]][1] >= courses[index[i]][0] + now_time) {
+//                    now_time += courses[index[i]][0];
+//                    now_num++;
+//                }
+//            }
+//            ret = max(ret, now_num);
+//        }
+//        return ret;
+//    }
+//
+//    //void dfs(int start, int end) {
+//    //    if (start == end)
+//    //        all_rank.emplace_back(old_vec);
+//    //    else
+//    //        for (int i = start; i <= end; ++i) {
+//    //            swap(old_vec[start], old_vec[i]);
+//    //            dfs(start + 1, end);
+//    //            swap(old_vec[start], old_vec[i]);
+//    //        }
+//    //    return;
+//    //}
+//};
+
 
 class Solution {
 public:
     int scheduleCourse(vector<vector<int>>& courses) {
-
+        sort(courses.begin(), courses.end(), [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; });
+        priority_queue<int> queue;
+        int time_now = 0;
+        for (vector<int> index : courses) {
+            if (index[0] + time_now <= index[1]) {
+                time_now += index[0];
+                queue.emplace(index[0]);
+            }
+            else {
+                if (!queue.empty() && queue.top() > index[0]) {
+                    time_now -= queue.top() - index[0];
+                    queue.pop();
+                    queue.push(index[0]);
+                }
+            }
+        }
+        return queue.size();
     }
 };

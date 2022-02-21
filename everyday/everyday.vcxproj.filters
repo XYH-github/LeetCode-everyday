@@ -369,6 +369,12 @@
     <ClCompile Include="code\22_12_15-lucky-numbers-in-a-matrix.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_12_14-course-schedule-iii.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_14-course-schedule.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
