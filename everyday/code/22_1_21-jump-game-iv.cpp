@@ -58,40 +58,78 @@ j 满足：arr[i] == arr[j] 且 i != j
 #include <unordered_set>
 using namespace std;
 
+//class Solution {
+//public:
+//    int minJumps(vector<int>& arr) {
+//        unordered_map<int, vector<int>> pos_map;
+//        queue<pair<int, int>> way_queue;
+//        unordered_set<int> visited_set;
+//        int len = arr.size();
+//        for (int i = 0; i < len; ++i)
+//            pos_map[arr[i]].emplace_back(i);
+//        way_queue.emplace(0, 0);
+//        visited_set.emplace(0);
+//        while (!way_queue.empty()) {
+//            auto queue_front = way_queue.front();
+//            way_queue.pop();
+//            if (queue_front.first == len - 1)
+//                return queue_front.second;
+//            int step = queue_front.second + 1;
+//            if (pos_map.count(arr[queue_front.first])) {
+//                for (auto index : pos_map[arr[queue_front.first]])
+//                    if (!visited_set.count(index)) {
+//                        way_queue.emplace(index, step);
+//                        visited_set.emplace(index);
+//                    }
+//                pos_map.erase(arr[queue_front.first]);
+//            }
+//
+//            if (queue_front.first + 1 < len && !visited_set.count(queue_front.first + 1)) {
+//                way_queue.emplace(queue_front.first + 1, step);
+//                visited_set.emplace(queue_front.first + 1);
+//            }
+//            if (queue_front.first - 1 > 0 && !visited_set.count(queue_front.first - 1)) {
+//                way_queue.emplace(queue_front.first - 1, step);
+//                visited_set.emplace(queue_front.first - 1);
+//            }
+//        }
+//        return -1;
+//    }
+//};
+
 class Solution {
 public:
     int minJumps(vector<int>& arr) {
-        unordered_map<int, vector<int>> pos_map;
-        queue<pair<int, int>> way_queue;
-        unordered_set<int> visited_set;
+        int pop_count = 1;
+        int ret = 0;
         int len = arr.size();
+        queue<int> queue;
+        vector<bool> visited(len);
+        unordered_map<int, vector<int>> pos_map;
         for (int i = 0; i < len; ++i)
             pos_map[arr[i]].emplace_back(i);
-        way_queue.emplace(0, 0);
-        visited_set.emplace(0);
-        while (!way_queue.empty()) {
-            auto queue_front = way_queue.front();
-            way_queue.pop();
-            if (queue_front.first == len - 1)
-                return queue_front.second;
-            int step = queue_front.second + 1;
-            if (pos_map.count(arr[queue_front.first])) {
-                for (auto index : pos_map[arr[queue_front.first]])
-                    if (!visited_set.count(index)) {
-                        way_queue.emplace(index, step);
-                        visited_set.emplace(index);
-                    }
-                pos_map.erase(arr[queue_front.first]);
+        queue.emplace(0);
+        visited[0] = true;
+        while (!queue.empty()) {
+            int front = queue.front();
+            queue.pop();
+            pop_count--;
+            if (front == len - 1)
+                return ret;
+            if (!pop_count)
+                ret++;
+            if (pos_map.count(arr[front])) {
+                for (int index : pos_map[arr[front]])
+                    if (!visited[index])
+                        queue.emplace(index), visited[index] = true;
+                pos_map.erase(arr[front]);
             }
-
-            if (queue_front.first + 1 < len && !visited_set.count(queue_front.first + 1)) {
-                way_queue.emplace(queue_front.first + 1, step);
-                visited_set.emplace(queue_front.first + 1);
-            }
-            if (queue_front.first - 1 > 0 && !visited_set.count(queue_front.first - 1)) {
-                way_queue.emplace(queue_front.first - 1, step);
-                visited_set.emplace(queue_front.first - 1);
-            }
+            if (front - 1 >= 0 && !visited[front - 1])
+                queue.emplace(front - 1), visited[front - 1] = true;
+            if (front + 1 < len && !visited[front + 1])
+                queue.emplace(front + 1), visited[front + 1] = true;
+            if (!pop_count)
+                pop_count = queue.size();
         }
         return -1;
     }

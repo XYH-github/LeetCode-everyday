@@ -81,42 +81,100 @@ using namespace std;
 //};
 
 
+//class Solution {
+//public:
+//    const int direct[5] = { 0, 1, 0, -1, 0 };
+//    int numEnclaves(vector<vector<int>>& grid) {
+//        int ret = 0;
+//        int len_m = grid.size();
+//        int len_n = grid[0].size();
+//        queue<pair<int, int>> pos_queue;
+//        for (int i = 0; i < len_m; ++i) {
+//            if (grid[i][0])
+//                grid[i][0] = 0, pos_queue.emplace(i, 0);
+//            if (grid[i][len_n - 1])
+//                grid[i][len_n - 1] = 0, pos_queue.emplace(i, len_n - 1);
+//        }
+//        for (int i = 0; i < len_n; ++i) {
+//            if (grid[0][i])
+//                grid[0][i] = 0, pos_queue.emplace(0, i);
+//            if (grid[len_m - 1][i])
+//                grid[len_m - 1][i] = 0, pos_queue.emplace(len_m - 1, i);
+//        }
+//        while (!pos_queue.empty()) {
+//            auto pos_front = pos_queue.front();
+//            pos_queue.pop();
+//            for (int i = 0; i < 4; ++i) {
+//                int new_x = pos_front.first + direct[i];
+//                int new_y = pos_front.second + direct[i + 1];
+//                if (new_x >= 0 && new_x < len_m &&
+//                    new_y >= 0 && new_y < len_n)
+//                    if (grid[new_x][new_y] == 1)
+//                        grid[new_x][new_y] = 0, pos_queue.emplace(new_x, new_y);
+//            }
+//        }
+//        for (int i = 0; i < len_m; ++i)
+//            for (int j = 0; j < len_n; ++j)
+//                if (grid[i][j])
+//                    ++ret;
+//        return ret;
+//    }
+//};
+
+
 class Solution {
 public:
     const int direct[5] = { 0, 1, 0, -1, 0 };
     int numEnclaves(vector<vector<int>>& grid) {
         int ret = 0;
-        int len_m = grid.size();
-        int len_n = grid[0].size();
-        queue<pair<int, int>> pos_queue;
-        for (int i = 0; i < len_m; ++i) {
+        len_m_ = grid.size();
+        len_n_ = grid[0].size();
+        visited_ = vector<vector<int>>(grid);
+        for (int i = 0; i < len_m_; ++i) {
             if (grid[i][0])
-                grid[i][0] = 0, pos_queue.emplace(i, 0);
-            if (grid[i][len_n - 1])
-                grid[i][len_n - 1] = 0, pos_queue.emplace(i, len_n - 1);
+                visited_[i][0] = 2;
+            if (grid[i][len_n_ - 1])
+                visited_[i][len_n_ - 1] = 2;
         }
-        for (int i = 0; i < len_n; ++i) {
-            if (grid[0][i])
-                grid[0][i] = 0, pos_queue.emplace(0, i);
-            if (grid[len_m - 1][i])
-                grid[len_m - 1][i] = 0, pos_queue.emplace(len_m - 1, i);
+        for (int j = 1; j < len_n_; ++j) {
+            if (grid[0][j])
+                visited_[0][j] = 2;
+            if (grid[len_m_ - 1][j])
+                visited_[len_m_ - 1][j] = 2;
         }
-        while (!pos_queue.empty()) {
-            auto pos_front = pos_queue.front();
-            pos_queue.pop();
-            for (int i = 0; i < 4; ++i) {
-                int new_x = pos_front.first + direct[i];
-                int new_y = pos_front.second + direct[i + 1];
-                if (new_x >= 0 && new_x < len_m &&
-                    new_y >= 0 && new_y < len_n)
-                    if (grid[new_x][new_y] == 1)
-                        grid[new_x][new_y] = 0, pos_queue.emplace(new_x, new_y);
-            }
-        }
-        for (int i = 0; i < len_m; ++i)
-            for (int j = 0; j < len_n; ++j)
-                if (grid[i][j])
-                    ++ret;
+        for (int i = 0; i < len_m_; ++i)
+            for (int j = 0; j < len_n_; ++j)
+                if (grid[i][j] && !dfs(i, j))
+                    ret++;
         return ret;
     }
+
+    bool dfs(int pos_x, int pos_y) {
+        if (visited_[pos_x][pos_y] == 2)
+            return true;
+        for (int i = 0; i < 4; ++i) {
+            int new_x = pos_x + direct[i];
+            int new_y = pos_y + direct[i + 1];
+            if (visited_[new_x][new_y] == 2)
+                return true;
+        }
+        for (int i = 0; i < 4; ++i) {
+            int new_x = pos_x + direct[i];
+            int new_y = pos_y + direct[i + 1];
+            visited_[pos_x][pos_y] = 0;
+            if (visited_[new_x][new_y] == 1) 
+                if (dfs(new_x, new_y)) {
+                    visited_[pos_x][pos_y] = 2;
+                    return true;
+                }
+            visited_[pos_x][pos_y] = 1;
+        }
+        return false;
+
+    }
+
+private:
+    int len_m_;
+    int len_n_;
+    vector<vector<int>> visited_;
 };

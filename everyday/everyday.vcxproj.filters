@@ -375,6 +375,18 @@
     <ClCompile Include="code\22_12_14-course-schedule.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_2_21-push-dominoes.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_22-the-number-of-good-subsets.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_14-course-schedule-iv.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_12_15-loud-and-rich.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

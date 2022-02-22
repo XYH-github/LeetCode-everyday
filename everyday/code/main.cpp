@@ -90,7 +90,10 @@
 //#include "22_2_18-find-center-of-star-graph.cpp"
 //#include "22_2_19-pancake-sorting.cpp"
 //#include "22_2_20-1-bit-and-2-bit-characters.cpp"
-#include "22_1_21-jump-game-iv.cpp"
+//#include "22_2_21-push-dominoes.cpp"
+
+
+//#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
 //#include "22_1_12-increasing-triplet-subsequence.cpp"
 //#include "22_1_13-largest-number-at-least-twice-of-others.cpp"
@@ -109,9 +112,10 @@
 //#include "22_12_14-course-schedule-iii.cpp"
 //#include "22_12_14-course-schedule.cpp"
 //#include "22_12_15-lucky-numbers-in-a-matrix.cpp"
+//#include "22_12_14-course-schedule-iv.cpp"
+//#include "22_12_15-loud-and-rich.cpp"
 
-
-
+//#include "22_2_22-the-number-of-good-subsets.cpp"
 //#include "21_11_27-random-flip-matrix.cpp"
 
 
@@ -119,11 +123,9 @@
 
 
 int main(void) {
-	//string input = "courses = [[100, 200], [200, 1300], [1000, 1250], [2000, 3200]];";
+	//string input = "vector<vector<int>> richer = [[1, 0], [2, 1], [3, 1], [3, 7], [4, 3], [5, 3], [6, 3]], quiet = [3, 2, 5, 4, 6, 1, 7, 0];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
-
-
 
 
 }
