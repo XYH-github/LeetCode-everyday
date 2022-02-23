@@ -91,7 +91,8 @@
 //#include "22_2_19-pancake-sorting.cpp"
 //#include "22_2_20-1-bit-and-2-bit-characters.cpp"
 //#include "22_2_21-push-dominoes.cpp"
-
+//unwork #include "22_2_22-the-number-of-good-subsets.cpp"
+//#include "22_2_23-reverse-only-letters.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -103,19 +104,23 @@
 //#include "22_1_3-day-of-the-week.cpp"
 //#include "22_1_5-replace-all-s-to-avoid-consecutive-repeating-characters.cpp"
 //#include "22_1_6-simplify-path.cpp"
-//#include "22_12_10-shortest-completing-word.cpp"
-//#include "22_12_11-online-election.cpp"
-//#include "22_12_12-to-lower-case.cpp"
-//#include "22_12_13-trapping-rain-water.cpp"
-//#include "22_12_13-max-increase-to-keep-city-skyline.cpp"
-//#include "22_12_14-single-element-in-a-sorted-array.cpp"
-//#include "22_12_14-course-schedule-iii.cpp"
-//#include "22_12_14-course-schedule.cpp"
-//#include "22_12_15-lucky-numbers-in-a-matrix.cpp"
-//#include "22_12_14-course-schedule-iv.cpp"
-//#include "22_12_15-loud-and-rich.cpp"
+//#include "21_12_10-shortest-completing-word.cpp"
+//#include "21_12_11-online-election.cpp"
+//#include "21_12_12-to-lower-case.cpp"
+//#include "21_12_13-trapping-rain-water.cpp"
+//#include "21_12_13-max-increase-to-keep-city-skyline.cpp"
+//#include "21_12_14-single-element-in-a-sorted-array.cpp"
+//#include "21_12_14-course-schedule-iii.cpp"
+//#include "21_12_14-course-schedule.cpp"
+//#include "21_12_15-lucky-numbers-in-a-matrix.cpp"
+//#include "21_12_14-course-schedule-iv.cpp"
+//#include "21_12_15-loud-and-rich.cpp"
+//#include "21_12_16-maximum-number-of-visible-points.cpp"
+//#include "21_12_17-water-bottles.cpp"
+//#include "21_12_18-battleships-in-a-board.cpp"
+//#include "21_12_22-repeated-string-match.cpp"
+#include "21_12_23-longest-duplicate-substring.cpp"
 
-//#include "22_2_22-the-number-of-good-subsets.cpp"
 //#include "21_11_27-random-flip-matrix.cpp"
 
 
@@ -123,7 +128,7 @@
 
 
 int main(void) {
-	//string input = "vector<vector<int>> richer = [[1, 0], [2, 1], [3, 1], [3, 7], [4, 3], [5, 3], [6, 3]], quiet = [3, 2, 5, 4, 6, 1, 7, 0];";
+	//string input = "";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 

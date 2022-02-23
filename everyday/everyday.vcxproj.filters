@@ -342,7 +342,7 @@
     <ClCompile Include="code\22_1_6-simplify-path.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_10-shortest-completing-word.cpp">
+    <ClCompile Include="code\21_12_10-shortest-completing-word.cpp">
       <Filter>code</Filter>
     </ClCompile>
     <ClCompile Include="code\22_2_19-pancake-sorting.cpp">
@@ -351,28 +351,28 @@
     <ClCompile Include="code\22_2_20-1-bit-and-2-bit-characters.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_11-online-election.cpp">
+    <ClCompile Include="code\21_12_11-online-election.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_12-to-lower-case.cpp">
+    <ClCompile Include="code\21_12_12-to-lower-case.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_13-max-increase-to-keep-city-skyline.cpp">
+    <ClCompile Include="code\21_12_13-max-increase-to-keep-city-skyline.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_13-trapping-rain-water.cpp">
+    <ClCompile Include="code\21_12_13-trapping-rain-water.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_14-single-element-in-a-sorted-array.cpp">
+    <ClCompile Include="code\21_12_14-single-element-in-a-sorted-array.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_15-lucky-numbers-in-a-matrix.cpp">
+    <ClCompile Include="code\21_12_15-lucky-numbers-in-a-matrix.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_14-course-schedule-iii.cpp">
+    <ClCompile Include="code\21_12_14-course-schedule-iii.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_14-course-schedule.cpp">
+    <ClCompile Include="code\21_12_14-course-schedule.cpp">
       <Filter>code</Filter>
     </ClCompile>
     <ClCompile Include="code\22_2_21-push-dominoes.cpp">
@@ -381,10 +381,25 @@
     <ClCompile Include="code\22_2_22-the-number-of-good-subsets.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_14-course-schedule-iv.cpp">
+    <ClCompile Include="code\21_12_14-course-schedule-iv.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_12_15-loud-and-rich.cpp">
+    <ClCompile Include="code\21_12_15-loud-and-rich.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_23-reverse-only-letters.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_16-maximum-number-of-visible-points.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_17-water-bottles.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_18-battleships-in-a-board.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_22-repeated-string-match.cpp">
       <Filter>code</Filter>
     </ClCompile>
   </ItemGroup>
