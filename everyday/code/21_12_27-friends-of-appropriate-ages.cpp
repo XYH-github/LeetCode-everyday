@@ -43,6 +43,7 @@ n == ages.length
 */
 
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 class Solution {
@@ -50,19 +51,18 @@ public:
     int numFriendRequests(vector<int>& ages) {
         int len = ages.size();
         int ret = 0;
-        for(int i = 0; i < len; ++i)
-            for (int j = i + 1; j < len; ++j) {
-                int max_age = ages[i];
-                int min_age = ages[j];
-                if (min_age > max_age)
-                    max_age = ages[j], min_age = ages[i];
-                if (min_age > max_age * 0.5 + 7) {
-                    ret++;
-                    if (min_age == max_age)
-                        ret++;
-                }
-                
-            }
-        return ret;
+        sort(ages.begin(), ages.end());
+        int age_index = 0;
+        while (ages[age_index] < 15)
+            age_index++;
+        int left = 0, right = len - 1;
+        while (left < right) {
+            int mid = left + ((right - left) >> 1);
+            if (ages[mid] > 0.5 * ages[age_index] + 7)
+                right = mid;
+            else
+                left = mid + 1;
+        }
+
     }
 };
