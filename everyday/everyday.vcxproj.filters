@@ -402,6 +402,27 @@
     <ClCompile Include="code\21_12_22-repeated-string-match.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_12_23-longest-duplicate-substring.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_24-where-will-the-ball-fall.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_25-complex-number-multiplication.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_24-maximum-number-of-eaten-apples.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_25-even-odd-tree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_26-occurrences-after-bigram.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

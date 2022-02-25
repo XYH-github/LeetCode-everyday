@@ -188,13 +188,13 @@ void BinaryTree<T>::CreateBinTreeLevelOrder(TreeNode<T>*& root, T* table, int n)
 	while (temp < n) {
 		TreeNode<T>* p = queue.front();
 		queue.pop();
-		p->left = new TreeNode<T>(*ch);
-		queue.push(p->left);
+		if (*ch != -1)
+			p->left = new TreeNode<T>(*ch), queue.push(p->left);				
 		ch++, temp++;
 		if (temp >= n)
 			break;
-		p->right = new TreeNode<T>(*ch);
-		queue.push(p->right);
+		if (*ch != -1)
+			p->right = new TreeNode<T>(*ch), queue.push(p->right);
 		ch++, temp++;
 	}
 }

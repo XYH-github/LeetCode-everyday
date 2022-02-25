@@ -93,6 +93,8 @@
 //#include "22_2_21-push-dominoes.cpp"
 //unwork #include "22_2_22-the-number-of-good-subsets.cpp"
 //#include "22_2_23-reverse-only-letters.cpp"
+//#include "22_2_24-where-will-the-ball-fall.cpp"
+//#include "22_2_25-complex-number-multiplication.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -119,7 +121,11 @@
 //#include "21_12_17-water-bottles.cpp"
 //#include "21_12_18-battleships-in-a-board.cpp"
 //#include "21_12_22-repeated-string-match.cpp"
-#include "21_12_23-longest-duplicate-substring.cpp"
+//#include "21_12_23-longest-duplicate-substring.cpp"
+//#include "21_12_24-maximum-number-of-eaten-apples.cpp"
+//#include "21_12_25-even-odd-tree.cpp"
+//#include "21_12_26-occurrences-after-bigram.cpp"
+#include "21_12_27-friends-of-appropriate-ages.cpp"
 
 //#include "21_11_27-random-flip-matrix.cpp"
 
@@ -128,11 +134,14 @@
 
 
 int main(void) {
-	//string input = "";
+	//string input = "grid = [[1,1,1,1,1,1],[-1,-1,-1,-1,-1,-1],[1,1,1,1,1,1],[-1,-1,-1,-1,-1,-1]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-
+	vector<int> ages = {20, 30, 100, 110, 120};
+	Solution temp;
+	int ret = temp.numFriendRequests(ages);
+	cout << ret << endl;
 }
 
 

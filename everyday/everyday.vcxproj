@@ -64,6 +64,11 @@
     <ClCompile Include="code\21_12_20-heaters.cpp" />
     <ClCompile Include="code\21_12_21-day-of-the-year.cpp" />
     <ClCompile Include="code\21_12_22-repeated-string-match.cpp" />
+    <ClCompile Include="code\21_12_23-longest-duplicate-substring.cpp" />
+    <ClCompile Include="code\21_12_24-maximum-number-of-eaten-apples.cpp" />
+    <ClCompile Include="code\21_12_25-even-odd-tree.cpp" />
+    <ClCompile Include="code\21_12_26-occurrences-after-bigram.cpp" />
+    <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp" />
     <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp" />
     <ClCompile Include="code\21_12_4-ransom-note.cpp" />
     <ClCompile Include="code\21_12_5-super-pow.cpp" />
@@ -138,6 +143,8 @@
     <ClCompile Include="code\22_2_21-push-dominoes.cpp" />
     <ClCompile Include="code\22_2_22-the-number-of-good-subsets.cpp" />
     <ClCompile Include="code\22_2_23-reverse-only-letters.cpp" />
+    <ClCompile Include="code\22_2_24-where-will-the-ball-fall.cpp" />
+    <ClCompile Include="code\22_2_25-complex-number-multiplication.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
     <ClCompile Include="code\22_2_5-path-with-maximum-gold.cpp" />

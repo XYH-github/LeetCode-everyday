@@ -42,6 +42,7 @@ a 和 b 由小写英文字母组成
 
 #include <string>
 #include <vector>
+#include <time.h>
 using namespace std;
 
 //class Solution {
@@ -76,6 +77,49 @@ using namespace std;
 
 
 
+//class Solution {
+//public:
+//    int repeatedStringMatch(string a, string b) {
+//        int len_a = a.size();
+//        int len_b = b.size();
+//        if (len_b == 0)
+//            return 0;
+//        int pos = str_str(a, b);
+//        if (pos == -1)
+//            return pos;
+//        if (len_a - pos >= len_b)
+//            return 1;
+//        return 2 + (len_b - len_a + pos - 1) / len_a;
+//
+//    }
+//
+//    int str_str(string ss, string pp) {
+//        int m = ss.size();
+//        int n = pp.size();
+//        if (n == 0)
+//            return 0;
+//        vector<int> next(n);
+//        for (int i = 1, j = 0; i < n; ++i) {
+//            while (j && pp[i] != pp[j])
+//                j = next[j - 1];
+//            if (pp[i] == pp[j])
+//                j++;
+//            next[i] = j;
+//        }
+//
+//        for (int i = 0, j = 0; i < m + n; ++i) {
+//            while (j && ss[i % m] != pp[j])
+//                j = next[j - 1];
+//            if (ss[i % m] == pp[j])
+//                j++;
+//            if (j == n)
+//                return i - n + 1;
+//        }
+//        return -1;
+//    }
+//};
+
+
 class Solution {
 public:
     int repeatedStringMatch(string a, string b) {
@@ -95,24 +139,32 @@ public:
     int str_str(string ss, string pp) {
         int m = ss.size();
         int n = pp.size();
-        if (n == 0)
+        srand((unsigned)time(NULL));
+        unsigned long long prime = rand() % 75 + 26;
+        unsigned long long hash_pp = 0;
+        unsigned long long hash_ss = 0;
+        auto pow = [](int a, int pow) {
+            unsigned long long ret = 1;
+            unsigned long long con = a;
+            while (pow) {
+                if (pow % 2)
+                    ret *= con;
+                con *= con;
+                pow >>= 1;
+            }
+            return ret;
+        };
+        for (int i = 0; i < n; ++i)
+            hash_pp = hash_pp * prime + pp[i] - 'a';
+        for (int i = 0; i < n; ++i)
+            hash_ss = hash_ss * prime + ss[i % m] - 'a';
+        if (hash_ss == hash_pp)
             return 0;
-        vector<int> next(n);
-        for (int i = 1, j = 0; i < n; ++i) {
-            while (j && pp[i] != pp[j])
-                j = next[j - 1];
-            if (pp[i] == pp[j])
-                j++;
-            next[i] = j;
-        }
-
-        for (int i = 0, j = 0; i < m + n; ++i) {
-            while (j && ss[i % m] != pp[j])
-                j = next[j - 1];
-            if (ss[i % m] == pp[j])
-                j++;
-            if (j == n)
-                return i - n + 1;
+        unsigned long long temp = pow(prime, n);
+        for (int i = n; i < m + n; ++i) {
+            hash_ss = hash_ss * prime - temp * (ss[(i - n) % m] - 'a') + ss[i % m] - 'a';
+            if (hash_ss == hash_pp)
+                return (i - n + 1) % m;
         }
         return -1;
     }
