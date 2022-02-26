@@ -423,12 +423,6 @@
     <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_2_26-maximum-difference-between-increasing-elements.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
-    <ClCompile Include="code\21_12_28-concatenated-words.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

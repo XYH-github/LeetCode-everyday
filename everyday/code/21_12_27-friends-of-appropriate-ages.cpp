@@ -40,75 +40,29 @@ n == ages.length
 
 链接：https://leetcode-cn.com/problems/friends-of-appropriate-ages
 
-    vector<int> ages = {16, 16};
-    Solution temp;
-    int ret = temp.numFriendRequests(ages);
-    cout << ret << endl;
-
 */
 
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-//class Solution {
-//public:
-//    int numFriendRequests(vector<int>& ages) {
-//        int len = ages.size();
-//        int ret = 0;
-//        sort(ages.begin(), ages.end());
-//        int age_index = 0;
-//        while (age_index < len && ages[age_index] < 15)
-//            age_index++;
-//        if (age_index == len)
-//            return 0;
-//        int left = 0, right = len - 1;
-//        while (left < right) {
-//            int mid = left + ((right - left) >> 1);
-//            if (ages[mid] > 0.5 * ages[age_index] + 7)
-//                right = mid;
-//            else
-//                left = mid + 1;
-//        }
-//        int first = left;
-//        left = 0, right = len - 1;
-//        while (left < right) {
-//            int mid = left + ((right - left + 1) >> 1);
-//            if (ages[mid] <= ages[age_index])
-//                left = mid;
-//            else
-//                right = mid - 1;
-//        }
-//        int second = left;
-//        ret += second - first;
-//        while (++age_index < len) {
-//            while (ages[first] <= 0.5 * ages[age_index] + 7)
-//                ++first;
-//            while (second + 1 < len && ages[second + 1] <= ages[age_index])
-//                ++second;
-//            ret += second - first;
-//        }
-//        return ret;
-//    }
-//};
-
-
 class Solution {
 public:
     int numFriendRequests(vector<int>& ages) {
-        vector<int> cnt(121);
-        for (int age : ages)
-            ++cnt[age];
-        vector<int> pre(121);
-        for (int i = 1; i <= 120; ++i)
-            pre[i] = pre[i - 1] + cnt[i];
+        int len = ages.size();
         int ret = 0;
-        for (int i = 15; i <= 120; ++i) {
-            if (cnt[i]) {
-                int bound = i * 0.5 + 8;
-                ret += cnt[i] * (pre[i] - pre[bound - 1] - 1);
-            }
+        sort(ages.begin(), ages.end());
+        int age_index = 0;
+        while (ages[age_index] < 15)
+            age_index++;
+        int left = 0, right = len - 1;
+        while (left < right) {
+            int mid = left + ((right - left) >> 1);
+            if (ages[mid] > 0.5 * ages[age_index] + 7)
+                right = mid;
+            else
+                left = mid + 1;
         }
-        return ret;
+
     }
 };
