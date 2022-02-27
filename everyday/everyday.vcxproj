@@ -148,6 +148,7 @@
     <ClCompile Include="code\22_2_24-where-will-the-ball-fall.cpp" />
     <ClCompile Include="code\22_2_25-complex-number-multiplication.cpp" />
     <ClCompile Include="code\22_2_26-maximum-difference-between-increasing-elements.cpp" />
+    <ClCompile Include="code\22_2_27-optimal-division.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
     <ClCompile Include="code\22_2_5-path-with-maximum-gold.cpp" />
