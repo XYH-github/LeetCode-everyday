@@ -70,6 +70,7 @@
     <ClCompile Include="code\21_12_26-occurrences-after-bigram.cpp" />
     <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp" />
     <ClCompile Include="code\21_12_28-concatenated-words.cpp" />
+    <ClCompile Include="code\21_12_28-implement-trie-prefix-tree.cpp" />
     <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp" />
     <ClCompile Include="code\21_12_4-ransom-note.cpp" />
     <ClCompile Include="code\21_12_5-super-pow.cpp" />

@@ -429,6 +429,9 @@
     <ClCompile Include="code\21_12_28-concatenated-words.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_12_28-implement-trie-prefix-tree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

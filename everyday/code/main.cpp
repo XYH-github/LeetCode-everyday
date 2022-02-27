@@ -96,6 +96,7 @@
 //#include "22_2_24-where-will-the-ball-fall.cpp"
 //#include "22_2_25-complex-number-multiplication.cpp"
 //#include "22_2_26-maximum-difference-between-increasing-elements.cpp"
+#include "22_2_27-optimal-division.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -127,7 +128,8 @@
 //#include "21_12_25-even-odd-tree.cpp"
 //#include "21_12_26-occurrences-after-bigram.cpp"
 //#include "21_12_27-friends-of-appropriate-ages.cpp"
-#include "21_12_28-concatenated-words.cpp"
+//#include "21_12_28-concatenated-words.cpp"
+//#include "21_12_28-implement-trie-prefix-tree.cpp"
 
 //#include "21_11_27-random-flip-matrix.cpp"
 
@@ -140,10 +142,8 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	vector<string> words = {"cat", "cats", "catsdogcats", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"};
-	Solution temp;
-	vector<string> ret = temp.findAllConcatenatedWordsInADict(words);
-	Print<string>::PrintOneDemionVector(ret);
+
+
 }
 
 
