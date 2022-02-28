@@ -71,7 +71,10 @@
     <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp" />
     <ClCompile Include="code\21_12_28-concatenated-words.cpp" />
     <ClCompile Include="code\21_12_28-implement-trie-prefix-tree.cpp" />
+    <ClCompile Include="code\21_12_29-count-special-quadruplets.cpp" />
     <ClCompile Include="code\21_12_3-maximize-sum-of-array-after-k-negations.cpp" />
+    <ClCompile Include="code\21_12_30-hand-of-straights.cpp" />
+    <ClCompile Include="code\21_12_31-perfect-number.cpp" />
     <ClCompile Include="code\21_12_4-ransom-note.cpp" />
     <ClCompile Include="code\21_12_5-super-pow.cpp" />
     <ClCompile Include="code\21_12_6-truncate-sentence.cpp" />
@@ -149,6 +152,7 @@
     <ClCompile Include="code\22_2_25-complex-number-multiplication.cpp" />
     <ClCompile Include="code\22_2_26-maximum-difference-between-increasing-elements.cpp" />
     <ClCompile Include="code\22_2_27-optimal-division.cpp" />
+    <ClCompile Include="code\22_2_28-maximum-number-of-achievable-transfer-requests.cpp" />
     <ClCompile Include="code\22_2_3-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k.cpp" />
     <ClCompile Include="code\22_2_4-number-of-rectangles-that-can-form-the-largest-square.cpp" />
     <ClCompile Include="code\22_2_5-path-with-maximum-gold.cpp" />

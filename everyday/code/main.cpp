@@ -96,7 +96,8 @@
 //#include "22_2_24-where-will-the-ball-fall.cpp"
 //#include "22_2_25-complex-number-multiplication.cpp"
 //#include "22_2_26-maximum-difference-between-increasing-elements.cpp"
-#include "22_2_27-optimal-division.cpp"
+//#include "22_2_27-optimal-division.cpp"
+//#include "22_2_28-maximum-number-of-achievable-transfer-requests.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -130,6 +131,9 @@
 //#include "21_12_27-friends-of-appropriate-ages.cpp"
 //#include "21_12_28-concatenated-words.cpp"
 //#include "21_12_28-implement-trie-prefix-tree.cpp"
+//#include "21_12_29-count-special-quadruplets.cpp"
+//#include "21_12_30-hand-of-straights.cpp"
+#include "21_12_31-perfect-number.cpp"
 
 //#include "21_11_27-random-flip-matrix.cpp"
 
@@ -138,10 +142,9 @@
 
 
 int main(void) {
-	//string input = "grid = [[1,1,1,1,1,1],[-1,-1,-1,-1,-1,-1],[1,1,1,1,1,1],[-1,-1,-1,-1,-1,-1]];";
+	//string input = "requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
-
 
 
 }

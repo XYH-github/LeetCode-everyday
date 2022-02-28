@@ -423,9 +423,6 @@
     <ClCompile Include="code\21_12_27-friends-of-appropriate-ages.cpp">
       <Filter>code</Filter>
     </ClCompile>
-    <ClCompile Include="code\22_2_26-maximum-difference-between-increasing-elements.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
     <ClCompile Include="code\21_12_28-concatenated-words.cpp">
       <Filter>code</Filter>
     </ClCompile>
@@ -433,6 +430,21 @@
       <Filter>code</Filter>
     </ClCompile>
     <ClCompile Include="code\22_2_27-optimal-division.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_26-maximum-difference-between-increasing-elements.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_2_28-maximum-number-of-achievable-transfer-requests.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_29-count-special-quadruplets.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_30-hand-of-straights.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_12_31-perfect-number.cpp">
       <Filter>code</Filter>
     </ClCompile>
   </ItemGroup>

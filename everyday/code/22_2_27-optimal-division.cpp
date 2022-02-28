@@ -26,15 +26,97 @@
 
 链接：https://leetcode-cn.com/problems/optimal-division
 
+    vector<int> matrix = {1000, 100, 10, 2};
+    Solution temp;
+    string ret = temp.optimalDivision(matrix);
+    cout << ret << endl;
+
 */
 
 #include <string>
 #include <vector>
 using namespace std;
 
+//class Solution {
+//public:
+//    string optimalDivision(vector<int>& nums) {
+//        int n = nums.size();
+//        if (n == 1) {
+//            return to_string(nums[0]);
+//        }
+//        if (n == 2) {
+//            return to_string(nums[0]) + "/" + to_string(nums[1]);
+//        }
+//        string res = to_string(nums[0]) + "/(" + to_string(nums[1]);
+//        for (int i = 2; i < n; i++) {
+//            res.append("/" + to_string(nums[i]));
+//        }
+//        res.append(")");
+//        return res;
+//    }
+//};
+
+
+//class Solution {
+//public:
+//    string optimalDivision(vector<int>& nums) {
+//        int n = nums.size();
+//        if (n == 1) {
+//            return to_string(nums[0]);
+//        }
+//        if (n == 2) {
+//            return to_string(nums[0]) + "/" + to_string(nums[1]);
+//        }
+//        string res = to_string(nums[0]) + "/(" + to_string(nums[1]);
+//        for (int i = 2; i < n; i++) {
+//            res.append("/" + to_string(nums[i]));
+//        }
+//        res.append(")");
+//        return res;
+//    }
+//};
+
+
 class Solution {
 public:
-    string optimalDivision(vector<int>& nums) {
+    struct Node {
+        double max_val, min_val;
+        string min_str, max_str;
+        Node() {
+            this->min_val = 10000.0;
+            this->max_val = 0.0;
+        }
+    };
 
+    string optimalDivision(vector<int>& nums) {
+        int len = nums.size();
+        vector<vector<Node>> dp(len, vector<Node>(len));
+
+        for (int i = 0; i < len; ++i) {
+            dp[i][i].min_val = nums[i];
+            dp[i][i].max_val = nums[i];
+            dp[i][i].min_str = to_string(nums[i]);
+            dp[i][i].max_str = to_string(nums[i]);
+        }
+
+        for(int i = 1; i < len; ++i)
+            for(int j = 0; j + i < len; ++j)
+                for (int k = j; k < j + i; ++k) {
+                    if (dp[j][j + i].max_val < dp[j][k].max_val / dp[k + 1][j + i].min_val) {
+                        dp[j][j + i].max_val = dp[j][k].max_val / dp[k + 1][j + i].min_val;
+                        if (k + 1 == j + i)
+                            dp[j][j + i].max_str = dp[j][k].max_str + '/' + dp[k + 1][j + i].min_str;
+                        else
+                            dp[j][j + i].max_str = dp[j][k].max_str + "/(" + dp[k + 1][j + i].min_str + ")";
+                    }
+                    if (dp[j][j + i].min_val > dp[j][k].min_val / dp[k + 1][j + i].max_val) {
+                        dp[j][j + i].min_val = dp[j][k].min_val / dp[k + 1][j + i].max_val;
+                        if (k + 1 == j + i) 
+                            dp[j][j + i].min_str = dp[j][k].min_str + "/" + dp[k + 1][j + i].max_str;
+                        else 
+                            dp[j][j + i].min_str = dp[j][k].min_str + "/(" + dp[k + 1][j + i].max_str + ")";
+                    }
+                }
+        return dp[0][len - 1].max_str;
     }
 };
