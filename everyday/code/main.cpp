@@ -98,6 +98,16 @@
 //#include "22_2_26-maximum-difference-between-increasing-elements.cpp"
 //#include "22_2_27-optimal-division.cpp"
 //#include "22_2_28-maximum-number-of-achievable-transfer-requests.cpp"
+//#include "22_3_1-zigzag-conversion.cpp"
+//#include "22_3_2-find-the-closest-palindrome.cpp"
+//#include "22_3_3-add-digits.cpp"
+//#include "22_3_4-sum-of-subarray-ranges.cpp"
+//#include "22_3_5-minimum-time-to-finish-the-race.cpp"
+//#include "22_3_6-palindromic-substrings.cpp"
+//#include "22_3_6-replace-non-coprime-numbers-in-array.cpp"
+//#include "22_3_6-append-k-integers-with-minimal-sum.cpp"
+//#include "22_3_6-find-good-days-to-rob-the-bank.cpp"
+//#include "22_3_7-base-7.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -133,20 +143,20 @@
 //#include "21_12_28-implement-trie-prefix-tree.cpp"
 //#include "21_12_29-count-special-quadruplets.cpp"
 //#include "21_12_30-hand-of-straights.cpp"
-#include "21_12_31-perfect-number.cpp"
-
+//#include "21_12_31-perfect-number.cpp"
+//#include "21_11_26-search-in-a-binary-search-tree.cpp"
 //#include "21_11_27-random-flip-matrix.cpp"
 
+//#include "temp.cpp"
 
 
 
-
-int main(void) {
-	//string input = "requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]];";
-	//Print<string>::VectorFormTrans(input);
-	//cout << input << endl;
-
-
-}
+//int main(void) {
+//	//string input = "tires = [[1,10],[2,2],[3,4]], changeTime = 6, numLaps = 5;";
+//	//Print<string>::VectorFormTrans(input);
+//	//cout << input << endl;
+//	
+//
+//}
 
 

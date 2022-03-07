@@ -21,6 +21,7 @@ public:
 	// constructor
 	BinaryTree() : root(NULL) {}
 
+	BinaryTree(TreeNode<T>* cur) : root(cur) {}
 	// constructor, ref endflag
 	BinaryTree(T value) : RefValue(value), root(NULL) {}
 
@@ -60,7 +61,7 @@ public:
 
 	void PrintBinTree() { PrintBinTree(root); };
 	void PrintBinTreeNoRec() { PrintBinTreeNoRec(root); }
-	
+	static void PrintBinTree(TreeNode<T>* cur);
 	
 
 	TreeNode<T>* Parent(TreeNode<T>* subtree, TreeNode<T>* cur);
@@ -89,7 +90,7 @@ private:
 	void PreOrderNorec2(TreeNode<T>* cur);
 
 	void LevelOrder(TreeNode<T>* cur);
-	void PrintBinTree(TreeNode<T>* cur);
+	//void PrintBinTree(TreeNode<T>* cur);
 	void PrintBinTreeNoRec(TreeNode<T>* cur);
 
 	int Size(TreeNode<T>* cur);

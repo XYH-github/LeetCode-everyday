@@ -34,6 +34,15 @@ solution.flip();  // 返回 [2, 0]，此时返回 [0,0]、[1,0] 和 [2,0] 的概
 每次调用flip 时，矩阵中至少存在一个值为 0 的格子。
 最多调用 1000 次 flip 和 reset 方法。
 
+    Solution temp(3, 1);
+    Print<int>::PrintOneDemionVector(temp.flip());
+    Print<int>::PrintOneDemionVector(temp.flip());
+    Print<int>::PrintOneDemionVector(temp.flip());
+    Print<int>::PrintOneDemionVector(temp.flip());
+    temp.reset();
+    Print<int>::PrintOneDemionVector(temp.flip());
+    Print<int>::PrintOneDemionVector(temp.flip());
+
 链接：https://leetcode-cn.com/problems/random-flip-matrix
 
 */
@@ -41,47 +50,94 @@ solution.flip();  // 返回 [2, 0]，此时返回 [0,0]、[1,0] 和 [2,0] 的概
 #include <vector>
 #include <time.h>
 #include <unordered_map>
+#include <unordered_set>
 using namespace std;
+
+//class Solution {
+//public:
+//    Solution(int m, int n) {
+//        srand(time(nullptr));
+//        this->total = m * n;
+//        this->m = m;
+//        this->n = n;
+//    }
+//
+//    vector<int> flip() {
+//        if (total == 0)
+//            return {};
+//        int x = rand() % total;
+//        pair<int, int> ret;
+//        if (map.count(x))
+//            ret = { map[x] / n, map[x] % n };
+//        else
+//            ret = {x / n, x % n};
+//        total--;
+//        if (map.count(total))
+//            map[x] = map[total];
+//        else
+//            map[x] = total;
+//        return {ret.first, ret.second};
+//    }
+//
+//    void reset() {
+//        total = m * n;
+//        map.clear();
+//    }
+//
+//private:
+//    int total;
+//    int m;
+//    int n;
+//    unordered_map<int, int> map;
+//};
+
 
 class Solution {
 public:
     Solution(int m, int n) {
-        srand(time(nullptr));
-        this->total = m * n;
         this->m = m;
         this->n = n;
+        total = m * n;
+        bucket_size = sqrt(m * n);
+        for (int i = 0; i < total; i += bucket_size)
+            buckets.push_back({});
+        srand(time(nullptr));
     }
 
     vector<int> flip() {
         int x = rand() % total;
-        vector<int> ans;
+        int sum_zero = 0;
+        int curr = 0;
         total--;
-        if (map.count(x))
-            ans = { map[x] / n, map[x] % n };
-        else
-            ans = { x / n, x % n };
-        if (map.count(total))
-            map[x] = map[total];
-        else
-            map[x] = total;
-        return ans;
+        for (auto &bucket : buckets) {
+            if (sum_zero + bucket_size - bucket.size() > x) {
+                for (int i = 0; i < bucket_size; ++i) {
+                    if (!bucket.count(curr + i)) {
+                        if (sum_zero == x) {
+                            bucket.emplace(curr + i);
+                            return { (curr + i) / n, (curr + i) % n };
+                        }
+                        sum_zero++;
+                    }
+                }
+            }
+                
+            curr += bucket_size;
+            sum_zero += bucket_size - bucket.size();
+        }
+        return {};
     }
 
     void reset() {
+        for (auto &bucker : buckets)
+            bucker.clear();
         total = m * n;
-        map.clear();
     }
 
 private:
-    int total;
     int m;
     int n;
-    unordered_map<int, int> map;
+    int bucket_size;
+    int total;
+    vector<unordered_set<int>> buckets;
 };
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution* obj = new Solution(m, n);
- * vector<int> param_1 = obj->flip();
- * obj->reset();
- */
