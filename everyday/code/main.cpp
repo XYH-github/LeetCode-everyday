@@ -108,6 +108,7 @@
 //#include "22_3_6-append-k-integers-with-minimal-sum.cpp"
 //#include "22_3_6-find-good-days-to-rob-the-bank.cpp"
 //#include "22_3_7-base-7.cpp"
+#include "22_3_8-plates-between-candles.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -152,10 +153,9 @@
 
 
 //int main(void) {
-//	//string input = "tires = [[1,10],[2,2],[3,4]], changeTime = 6, numLaps = 5;";
+//	//string input = "queries = [[2,5],[5,9]], changeTime = 6, numLaps = 5;";
 //	//Print<string>::VectorFormTrans(input);
 //	//cout << input << endl;
-//	
 //
 //}
 
