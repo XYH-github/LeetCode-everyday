@@ -510,6 +510,12 @@
     <ClCompile Include="set\1-fruit-into-baskets.cpp">
       <Filter>set</Filter>
     </ClCompile>
+    <ClCompile Include="set\1-minimum-window-substring.cpp">
+      <Filter>set</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_9-smallest-rotation-with-highest-score.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
