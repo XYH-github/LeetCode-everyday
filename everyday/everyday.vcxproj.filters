@@ -516,6 +516,9 @@
     <ClCompile Include="code\22_3_9-smallest-rotation-with-highest-score.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
