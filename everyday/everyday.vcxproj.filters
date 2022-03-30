@@ -7,6 +7,12 @@
     <Filter Include="set">
       <UniqueIdentifier>{87ae5fc5-1710-421f-af75-b5a5dbeeb944}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sword">
+      <UniqueIdentifier>{c12e02ec-e53d-4251-9291-9c71a520928d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hot100">
+      <UniqueIdentifier>{1f9c5a94-4eb6-4884-aa4e-8b62bce09976}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp">
@@ -517,6 +523,54 @@
       <Filter>code</Filter>
     </ClCompile>
     <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_11-count-nodes-with-the-highest-score.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="sword\2-1.cpp">
+      <Filter>sword</Filter>
+    </ClCompile>
+    <ClCompile Include="sword\main.cpp">
+      <Filter>sword</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_28-binary-number-with-alternating-bits.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_27-find-missing-observations.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_25-factorial-trailing-zeroes.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_26-baseball-game.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_24-image-smoother.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="sword\26.cpp">
+      <Filter>sword</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_29-max-consecutive-ones-iii.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_29-maximize-the-confusion-of-an-exam.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_29-longest-repeating-character-replacement.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_30-find-servers-that-handled-most-number-of-requests.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_23-k-th-smallest-in-lexicographical-order.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_22-remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_21-two-sum-iv-input-is-a-bst.cpp">
       <Filter>code</Filter>
     </ClCompile>
   </ItemGroup>
