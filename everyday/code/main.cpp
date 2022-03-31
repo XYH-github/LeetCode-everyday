@@ -109,13 +109,7 @@
 //#include "22_3_6-find-good-days-to-rob-the-bank.cpp"
 //#include "22_3_7-base-7.cpp"
 //#include "22_3_8-plates-between-candles.cpp"
-<<<<<<< HEAD
 #include "22_3_9-smallest-rotation-with-highest-score.cpp"
-=======
-//#include "22_3_9-smallest-rotation-with-highest-score.cpp"
-#include "22_3_10-n-ary-tree-preorder-traversal.cpp"
-
->>>>>>> parent of 3e044ce (3-31)
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -158,7 +152,6 @@
 //#include "temp.cpp"
 
 
-<<<<<<< HEAD
 
 int main(void) {
 	//string input = "queries = [[2,5],[5,9]], changeTime = 6, numLaps = 5;";
@@ -172,14 +165,3 @@ int main(void) {
 }
 
 
-=======
-
-//int main(void) {
-//	//string input = "queries = [[2,5],[5,9]], changeTime = 6, numLaps = 5;";
-//	//Print<string>::VectorFormTrans(input);
-//	//cout << input << endl;
-//	
-//}
-
-
->>>>>>> parent of 3e044ce (3-31)

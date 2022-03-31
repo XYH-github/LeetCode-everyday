@@ -516,12 +516,6 @@
     <ClCompile Include="code\22_3_9-smallest-rotation-with-highest-score.cpp">
       <Filter>code</Filter>
     </ClCompile>
-<<<<<<< HEAD
-=======
-    <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
->>>>>>> parent of 3e044ce (3-31)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
