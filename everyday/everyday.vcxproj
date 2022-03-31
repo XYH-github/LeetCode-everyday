@@ -162,6 +162,10 @@
     <ClCompile Include="code\22_2_8-grid-illumination.cpp" />
     <ClCompile Include="code\22_2_9-count-number-of-pairs-with-absolute-difference-k.cpp" />
     <ClCompile Include="code\22_3_1-zigzag-conversion.cpp" />
+<<<<<<< HEAD
+=======
+    <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp" />
+>>>>>>> parent of 3e044ce (3-31)
     <ClCompile Include="code\22_3_3-add-digits.cpp" />
     <ClCompile Include="code\22_3_4-sum-of-subarray-ranges.cpp" />
     <ClCompile Include="code\22_3_5-minimum-time-to-finish-the-race.cpp" />
