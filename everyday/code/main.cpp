@@ -109,7 +109,26 @@
 //#include "22_3_6-find-good-days-to-rob-the-bank.cpp"
 //#include "22_3_7-base-7.cpp"
 //#include "22_3_8-plates-between-candles.cpp"
-#include "22_3_9-smallest-rotation-with-highest-score.cpp"
+//#include "22_3_9-smallest-rotation-with-highest-score.cpp"
+//#include "22_3_10-n-ary-tree-preorder-traversal.cpp"
+//#include "22_3_11-count-nodes-with-the-highest-score.cpp"
+//#include "22_3_31-self-dividing-numbers.cpp"
+//#include "22_3_30-find-servers-that-handled-most-number-of-requests.cpp"
+//#include "22_3_29-max-consecutive-ones-iii.cpp"
+//#include "22_3_29-maximize-the-confusion-of-an-exam.cpp"
+//#include "22_3_29-longest-repeating-character-replacement.cpp"
+//#include "22_3_28-binary-number-with-alternating-bits.cpp"
+//#include "22_3_27-find-missing-observations.cpp"
+//#include "22_3_26-baseball-game.cpp"
+//#include "22_3_25-factorial-trailing-zeroes.cpp"
+//#include "22_3_24-image-smoother.cpp"
+//#include "22_3_23-k-th-smallest-in-lexicographical-order.cpp"
+//#include "22_3_22-remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp"
+//#include "22_3_21-two-sum-iv-input-is-a-bst.cpp"
+//#include "22_3_20-the-time-when-the-network-becomes-idle.cpp"
+//#include "22_3_19-construct-string-from-binary-tree.cpp"
+#include "22_3_18-simple-bank-system.cpp"
+
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -158,10 +177,7 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	vector<int> nums = { 2, 3, 1, 4, 0 };
-	Solution temp;
-	int ret = temp.bestRotation(nums);
-	cout << ret << endl;
+
 }
 
 

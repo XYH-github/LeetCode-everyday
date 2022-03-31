@@ -45,6 +45,7 @@
     <ClCompile Include="code\21_11_23-buddy-strings.cpp" />
     <ClCompile Include="code\21_11_25-pig-die.cpp" />
     <ClCompile Include="code\21_11_26-search-in-a-binary-search-tree.cpp" />
+    <ClCompile Include="code\21_11_27-random-flip-matrix.cpp" />
     <ClCompile Include="code\21_11_28-find-all-anagrams-in-a-string.cpp" />
     <ClCompile Include="code\21_11_29-hebing-paixulianbiao.cpp" />
     <ClCompile Include="code\21_11_29-k-th-smallest-prime-fraction.cpp" />
@@ -162,7 +163,25 @@
     <ClCompile Include="code\22_2_8-grid-illumination.cpp" />
     <ClCompile Include="code\22_2_9-count-number-of-pairs-with-absolute-difference-k.cpp" />
     <ClCompile Include="code\22_3_1-zigzag-conversion.cpp" />
+    <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp" />
+    <ClCompile Include="code\22_3_11-count-nodes-with-the-highest-score.cpp" />
+    <ClCompile Include="code\22_3_18-simple-bank-system.cpp" />
+    <ClCompile Include="code\22_3_19-construct-string-from-binary-tree.cpp" />
+    <ClCompile Include="code\22_3_20-the-time-when-the-network-becomes-idle.cpp" />
+    <ClCompile Include="code\22_3_21-two-sum-iv-input-is-a-bst.cpp" />
+    <ClCompile Include="code\22_3_22-remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp" />
+    <ClCompile Include="code\22_3_23-k-th-smallest-in-lexicographical-order.cpp" />
+    <ClCompile Include="code\22_3_24-image-smoother.cpp" />
+    <ClCompile Include="code\22_3_25-factorial-trailing-zeroes.cpp" />
+    <ClCompile Include="code\22_3_26-baseball-game.cpp" />
+    <ClCompile Include="code\22_3_27-find-missing-observations.cpp" />
+    <ClCompile Include="code\22_3_28-binary-number-with-alternating-bits.cpp" />
+    <ClCompile Include="code\22_3_29-longest-repeating-character-replacement.cpp" />
+    <ClCompile Include="code\22_3_29-max-consecutive-ones-iii.cpp" />
+    <ClCompile Include="code\22_3_29-maximize-the-confusion-of-an-exam.cpp" />
     <ClCompile Include="code\22_3_3-add-digits.cpp" />
+    <ClCompile Include="code\22_3_30-find-servers-that-handled-most-number-of-requests.cpp" />
+    <ClCompile Include="code\22_3_31-self-dividing-numbers.cpp" />
     <ClCompile Include="code\22_3_4-sum-of-subarray-ranges.cpp" />
     <ClCompile Include="code\22_3_5-minimum-time-to-finish-the-race.cpp" />
     <ClCompile Include="code\22_3_6-append-k-integers-with-minimal-sum.cpp" />
@@ -188,6 +207,9 @@
     <ClCompile Include="set\1-sqrtx.cpp" />
     <ClCompile Include="set\main.cpp" />
     <ClCompile Include="set\1-valid-perfect-square.cpp" />
+    <ClCompile Include="sword\2-1.cpp" />
+    <ClCompile Include="sword\26.cpp" />
+    <ClCompile Include="sword\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\BinaryTree.h" />
