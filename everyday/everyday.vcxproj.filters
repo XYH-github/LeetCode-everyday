@@ -588,6 +588,27 @@
     <ClCompile Include="code\22_3_18-simple-bank-system.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_4_6-minimum-height-trees.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_5-prime-number-of-set-bits-in-binary-representation.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_4-range-sum-query-mutable.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_3-find-smallest-letter-greater-than-target.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_2-strong-password-checker.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_1-array-of-doubled-pairs.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_17-longest-word-in-dictionary.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
