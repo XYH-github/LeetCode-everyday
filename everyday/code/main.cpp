@@ -128,13 +128,15 @@
 //#include "22_3_20-the-time-when-the-network-becomes-idle.cpp"
 //#include "22_3_19-construct-string-from-binary-tree.cpp"
 //#include "22_3_18-simple-bank-system.cpp"
-#include "22_3_17-longest-word-in-dictionary.cpp"
+//#include "22_3_17-longest-word-in-dictionary.cpp"
+#include "22_3_16-all-oone-data-structure.cpp"
 //#include "22_4_6-minimum-height-trees.cpp"
 //#include "22_4_5-prime-number-of-set-bits-in-binary-representation.cpp"
 //#include "22_4_4-range-sum-query-mutable.cpp"
 //#include "22_4_3-find-smallest-letter-greater-than-target.cpp"
 //unwork #include "22_4_2-strong-password-checker.cpp"
 //#include "22_4_1-array-of-doubled-pairs.cpp"
+//#include "22_4_7-rotate-string.cpp"
 
 
 //#include "22_1_21-jump-game-iv.cpp"
@@ -188,8 +190,5 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	vector<string> words = { "a", "banana", "app", "appl", "ap", "apply", "apple" };
-	Solution temp;
-	string ret = temp.longestWord(words);
-	cout << ret << endl;
+
 }

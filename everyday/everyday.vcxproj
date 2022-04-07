@@ -165,6 +165,7 @@
     <ClCompile Include="code\22_3_1-zigzag-conversion.cpp" />
     <ClCompile Include="code\22_3_10-n-ary-tree-preorder-traversal.cpp" />
     <ClCompile Include="code\22_3_11-count-nodes-with-the-highest-score.cpp" />
+    <ClCompile Include="code\22_3_16-all-oone-data-structure.cpp" />
     <ClCompile Include="code\22_3_17-longest-word-in-dictionary.cpp" />
     <ClCompile Include="code\22_3_18-simple-bank-system.cpp" />
     <ClCompile Include="code\22_3_19-construct-string-from-binary-tree.cpp" />
@@ -198,6 +199,7 @@
     <ClCompile Include="code\22_4_4-range-sum-query-mutable.cpp" />
     <ClCompile Include="code\22_4_5-prime-number-of-set-bits-in-binary-representation.cpp" />
     <ClCompile Include="code\22_4_6-minimum-height-trees.cpp" />
+    <ClCompile Include="code\22_4_7-rotate-string.cpp" />
     <ClCompile Include="code\BinaryTree.cpp" />
     <ClCompile Include="code\22_3_2-find-the-closest-palindrome.cpp" />
     <ClCompile Include="code\LinkList.cpp" />

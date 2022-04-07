@@ -26,6 +26,11 @@
 
 链接：https://leetcode-cn.com/problems/longest-word-in-dictionary
 
+    vector<string> words = { "a", "banana", "app", "appl", "ap", "apply", "apple" };
+    Solution temp;
+    string ret = temp.longestWord(words);
+    cout << ret << endl;
+
 */
 
 #include <string>

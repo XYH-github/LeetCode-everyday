@@ -609,6 +609,12 @@
     <ClCompile Include="code\22_3_17-longest-word-in-dictionary.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_4_7-rotate-string.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_16-all-oone-data-structure.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
