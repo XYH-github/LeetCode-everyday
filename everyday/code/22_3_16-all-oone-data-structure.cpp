@@ -37,6 +37,111 @@ key 由小写英文字母组成
 测试用例保证：在每次调用 dec 时，数据结构中总存在 key
 最多调用 inc、dec、getMaxKey 和 getMinKey 方法 5 * 104 次
 
+    AllOne temp;
+    temp.inc("hello");
+    temp.inc("hello");
+    cout << temp.getMaxKey() << endl;
+    cout << temp.getMinKey() << endl;
+    temp.inc("leet");
+    cout << temp.getMaxKey() << endl;
+    cout << temp.getMinKey() << endl;
+
 链接：https://leetcode-cn.com/problems/all-oone-data-structure
 
 */
+
+#include <list>
+#include <unordered_map>
+#include <string>
+#include <unordered_set>
+using namespace std;
+
+class AllOne {
+    list<pair<unordered_set<string>, int>> lst;
+    unordered_map<string, list<pair<unordered_set<string>, int>>::iterator> nodes;
+public:
+    AllOne() {
+    }
+    void inc(string key) {
+        if (nodes.count(key)) {
+            auto cur = nodes[key];
+            auto nex = next(cur);
+            if (nex == lst.end() || nex->second > cur->second + 1) {
+                unordered_set<string> temp({ key });
+                nodes[key] = lst.emplace(nex, temp, cur->second + 1);
+            }
+            else {
+                nex->first.emplace(key);
+                nodes[key] = nex;
+            }
+            cur->first.erase(key);
+            if (cur->first.empty())
+                lst.erase(cur);
+        }
+        else {
+            if (lst.empty() || lst.begin()->second > 1) {
+                unordered_set<string> temp({ key });
+                lst.emplace_front(temp, 1);
+            }
+            else {
+                lst.begin()->first.emplace(key);
+            }
+            nodes[key] = lst.begin();
+        }
+    }
+
+    void dec(string key) {
+        // auto cur = nodes[key];
+        // if (cur->second == 1) { // key 仅出现一次，将其移出 nodes
+        //     nodes.erase(key);
+        // } else {
+        //     auto pre = prev(cur);
+        //     if (cur == lst.begin() || pre->second < cur->second - 1) {
+        //         unordered_set<string> s({key});
+        //         nodes[key] = lst.emplace(cur, s, cur->second - 1);
+        //     } else {
+        //         pre->first.emplace(key);
+        //         nodes[key] = pre;
+        //     }
+        // }
+        // cur->first.erase(key);
+        // if (cur->first.empty()) {
+        //     lst.erase(cur);
+        // }
+
+        auto cur = nodes[key];
+        auto pre = prev(cur);
+        if (cur == lst.begin() || pre->second < cur->second - 1) {
+            if (cur->second == 1)
+                nodes.erase(key);
+            else {
+                unordered_set<string> temp({ key });
+                nodes[key] = lst.emplace(cur, temp, cur->second - 1);
+            }
+        }
+        else {
+            pre->first.emplace(key);
+            nodes[key] = pre;
+        }
+        cur->first.erase(key);
+        if (cur->first.empty())
+            lst.erase(cur);
+    }
+
+    string getMaxKey() {
+        return lst.empty() ? "" : *lst.rbegin()->first.begin();
+    }
+
+    string getMinKey() {
+        return lst.empty() ? "" : *lst.begin()->first.begin();
+    }
+};
+
+/**
+ * Your AllOne object will be instantiated and called as such:
+ * AllOne* obj = new AllOne();
+ * obj->inc(key);
+ * obj->dec(key);
+ * string param_3 = obj->getMaxKey();
+ * string param_4 = obj->getMinKey();
+ */

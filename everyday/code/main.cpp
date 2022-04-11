@@ -129,7 +129,11 @@
 //#include "22_3_19-construct-string-from-binary-tree.cpp"
 //#include "22_3_18-simple-bank-system.cpp"
 //#include "22_3_17-longest-word-in-dictionary.cpp"
-#include "22_3_16-all-oone-data-structure.cpp"
+//#include "22_3_16-all-oone-data-structure.cpp"
+//#include "22_3_15-count-number-of-maximum-bitwise-or-subsets.cpp"
+//#include "22_3_14-minimum-index-sum-of-two-lists.cpp"
+//#include "22_3_13-utf-8-validation.cpp"
+//#include "22_3_12-n-ary-tree-postorder-traversal.cpp"
 //#include "22_4_6-minimum-height-trees.cpp"
 //#include "22_4_5-prime-number-of-set-bits-in-binary-representation.cpp"
 //#include "22_4_4-range-sum-query-mutable.cpp"
@@ -137,7 +141,10 @@
 //unwork #include "22_4_2-strong-password-checker.cpp"
 //#include "22_4_1-array-of-doubled-pairs.cpp"
 //#include "22_4_7-rotate-string.cpp"
-
+//#include "22_4_8-n-ary-tree-level-order-traversal.cpp"
+//#include "22_4_9-reaching-points.cpp"
+//#include "22_4_10-unique-morse-code-words.cpp"
+#include "22_4_11-count-numbers-with-unique-digits.cpp"
 
 //#include "22_1_21-jump-game-iv.cpp"
 //#include "22_1_22-remove-palindromic-subsequences.cpp"
@@ -192,3 +199,4 @@ int main(void) {
 
 
 }
+

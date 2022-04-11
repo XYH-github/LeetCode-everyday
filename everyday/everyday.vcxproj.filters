@@ -615,6 +615,30 @@
     <ClCompile Include="code\22_3_16-all-oone-data-structure.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_3_15-count-number-of-maximum-bitwise-or-subsets.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_14-minimum-index-sum-of-two-lists.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_13-utf-8-validation.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_3_12-n-ary-tree-postorder-traversal.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_8-n-ary-tree-level-order-traversal.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_9-reaching-points.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_10-unique-morse-code-words.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_11-count-numbers-with-unique-digits.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
