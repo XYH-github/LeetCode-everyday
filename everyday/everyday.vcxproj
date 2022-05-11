@@ -208,11 +208,17 @@
     <ClCompile Include="code\22_4_7-rotate-string.cpp" />
     <ClCompile Include="code\22_4_8-n-ary-tree-level-order-traversal.cpp" />
     <ClCompile Include="code\22_4_9-reaching-points.cpp" />
+    <ClCompile Include="code\22_5_11-serialize-and-deserialize-binary-tree.cpp" />
+    <ClCompile Include="code\22_5_11-serialize-and-deserialize-bst.cpp" />
+    <ClCompile Include="code\22_5_7-minimum-genetic-mutation.cpp" />
+    <ClCompile Include="code\22_5_8-find-all-duplicates-in-an-array.cpp" />
+    <ClCompile Include="code\22_5_9-di-string-match.cpp" />
     <ClCompile Include="code\BinaryTree.cpp" />
     <ClCompile Include="code\22_3_2-find-the-closest-palindrome.cpp" />
     <ClCompile Include="code\LinkList.cpp" />
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\NAryTree.cpp" />
+    <ClCompile Include="code\22_4_12-number-of-lines-to-write-string.cpp" />
     <ClCompile Include="code\Print.cpp" />
     <ClCompile Include="code\temp.cpp" />
     <ClCompile Include="code\template.cpp" />

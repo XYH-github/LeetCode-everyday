@@ -639,6 +639,24 @@
     <ClCompile Include="code\22_4_11-count-numbers-with-unique-digits.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_4_12-number-of-lines-to-write-string.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_5_9-di-string-match.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_5_8-find-all-duplicates-in-an-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_5_7-minimum-genetic-mutation.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_5_11-serialize-and-deserialize-bst.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_5_11-serialize-and-deserialize-binary-tree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
