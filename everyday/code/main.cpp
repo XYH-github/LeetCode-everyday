@@ -200,8 +200,14 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 	
-	vector<vector<int>> ret;
-	
+	int input_vec[] = { 8, 6, 10, 3, 7, 9, 12};
+	Codec temp;
+	temp.CreateBinTreeLevelOrder(input_vec, sizeof(input_vec) / sizeof(int));
+	temp.PrintBinTree();
+	string ret = temp.serialize(temp.GetRootNode());
+	cout << endl << ret << endl;
+	TreeNode<int>* ret = temp.deserialize(ret);
+	BinaryTree<int>::PrintBinTree(ret);
 }
 
 

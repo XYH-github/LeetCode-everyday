@@ -28,3 +28,79 @@
 
 */
 
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+
+#include <string>
+#include "BinaryTree.h"
+using namespace std;
+
+class Codec : public BinaryTree<int>{
+public:
+
+    // Encodes a tree to a single string.
+    string serialize(TreeNode<int>* root) {
+        dfsGetPreInder(root);
+        string ret;
+        int len = pre_vec.size();
+        for (int i = 0; i < len - 1; ++i) {
+            ret += to_string(pre_vec[i]) + ",";
+        }
+        ret += to_string(pre_vec[len - 1]);
+        return ret;
+    }
+
+    void dfsGetPreInder(TreeNode<int>* root) {
+        if (root == NULL)
+            return;
+        pre_vec.emplace_back(root->val);
+        dfsGetPreInder(root->left);
+        dfsGetPreInder(root->right);
+    }
+
+    // Decodes your encoded data to tree.
+    TreeNode<int>* deserialize(string data) {
+        vector<int> vec;
+        int len = data.size();
+        int i = 0;
+        int start = 0;
+        while (i < len) {
+            if (data[i] == ',') {
+                vec.emplace_back(stoi(data.substr(start, i - start)));
+                start = i + 1;
+            }
+            i++;
+        }
+        vec.emplace_back(stoi(data.substr(start, len - start)));
+        return dfsDeserialize(vec, INT_MIN, INT_MAX);
+    }
+
+    TreeNode<int>* dfsDeserialize(vector<int>& vec, int lower, int upper) {
+        if (vec.size() == 0 || vec.front() > lower || vec.front() < upper) {
+            return NULL;
+        }
+        int val = vec.front();
+        TreeNode<int>* cur = new TreeNode<int>(val);
+        vec.erase(vec.begin());
+        cur->left = dfsDeserialize(vec, lower, val);
+        cur->right = dfsDeserialize(vec, val, upper);
+        return cur;
+    }
+
+private:
+    vector<int> pre_vec;
+};
+
+// Your Codec object will be instantiated and called as such:
+// Codec* ser = new Codec();
+// Codec* deser = new Codec();
+// string tree = ser->serialize(root);
+// TreeNode* ans = deser->deserialize(tree);
+// return ans;
