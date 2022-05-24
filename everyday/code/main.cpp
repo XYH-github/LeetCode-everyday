@@ -146,11 +146,40 @@
 //#include "22_4_10-unique-morse-code-words.cpp"
 //#include "22_4_11-count-numbers-with-unique-digits.cpp"
 //#include "22_4_12-number-of-lines-to-write-string.cpp"
+//#include "22_4_13-insert-delete-getrandom-o1.cpp"
+//#include "22_4_14-richest-customer-wealth.cpp"
+//#include "22_4_15-mini-parser.cpp"
+//#include "22_4_16-largest-palindrome-product.cpp"
+//#include "22_4_17-most-common-word.cpp"
+//#include "22_4_18-lexicographical-numbers.cpp"
+//#include "22_4_19-shortest-distance-to-a-character.cpp"
+
+
+#include "22_5_22-can-i-win.cpp"
+//#include "22_5_21-n-repeated-element-in-size-2n-array.cpp"
+//#include "22_5_20-find-right-interval.cpp"
+//#include "22_5_19-find-kth-largest-xor-coordinate-value.cpp"
+//#include "22_5_19-kth-largest-element-in-an-array.cpp"
+//#include "22_5_19-minimum-moves-to-equal-array-elements-ii.cpp"
+//#include "22_5_18-kth-smallest-number-in-multiplication-table.cpp"
+//#include "22_5_17-verifying-an-alien-dictionary.cpp"
+//#include "22_5_16-successor-lcci.cpp"
+//#include "22_5_15-largest-triangle-area.cpp"
+//#include "22_5_14-stickers-to-spell-word.cpp"
+//#include "22_5_13-one-away-lcci.cpp"
+//#include "22_5_13-edit-distance.cpp"
+//#include "22_5_12-delete-columns-to-make-sorted.cpp"
 //#include "22_5_11-serialize-and-deserialize-binary-tree.cpp"
-#include "22_5_11-serialize-and-deserialize-bst.cpp"
+//#include "22_5_11-serialize-and-deserialize-bst.cpp"
 //#include "22_5_9-di-string-match.cpp" 
 //#include "22_5_8-find-all-duplicates-in-an-array.cpp"
 //#include "22_5_7-minimum-genetic-mutation.cpp"
+//#include "22_5_6-number-of-recent-calls.cpp"
+//#include "22_5_5-subarray-product-less-than-k.cpp"
+//#include "22_5_4-find-the-winner-of-the-circular-game.cpp"
+//#include "22_5_3-reorder-data-in-log-files.cpp"
+//#include "22_5_2-tag-validator.cpp"
+//#include "22_5_1-all-elements-in-two-binary-search-trees.cpp"
 
 
 //#include "22_1_21-jump-game-iv.cpp"
@@ -196,18 +225,11 @@
 
 
 int main(void) {
-	//string input = "[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]];";
+	//string input = "intervals = [[3,4],[2,3],[1,2]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
-	
-	int input_vec[] = { 8, 6, 10, 3, 7, 9, 12};
-	Codec temp;
-	temp.CreateBinTreeLevelOrder(input_vec, sizeof(input_vec) / sizeof(int));
-	temp.PrintBinTree();
-	string ret = temp.serialize(temp.GetRootNode());
-	cout << endl << ret << endl;
-	TreeNode<int>* ret = temp.deserialize(ret);
-	BinaryTree<int>::PrintBinTree(ret);
+
+
 }
 
 
