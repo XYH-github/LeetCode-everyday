@@ -153,9 +153,29 @@
 //#include "22_4_17-most-common-word.cpp"
 //#include "22_4_18-lexicographical-numbers.cpp"
 //#include "22_4_19-shortest-distance-to-a-character.cpp"
+//#include "22_4_20-longest-absolute-file-path.cpp"
+//#include "22_4_21-goat-latin.cpp"
+//#include "22_4_22-rotate-function.cpp"
+//unwork #include "22_4_23-erect-the-fence.cpp"
+//#include "22_4_24-binary-gap.cpp"
+//#include "22_4_25-random-pick-index.cpp"
+//#include "22_4_26-projection-area-of-3d-shapes.cpp"
 
 
-#include "22_5_22-can-i-win.cpp"
+#include "22_6_2-delete-node-in-a-bst.cpp"
+//#include "22_6_3-consecutive-numbers-sum.cpp"
+//#include "22_6_4-unique-email-addresses.cpp"
+//#include "22_6_5-generate-random-point-in-a-circle.cpp"
+//#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
+//#include "22_5_29-validate-ip-address.cpp"
+//#include "22_5_28-remove-outermost-parentheses.cpp"
+//#include "22_5_27-find-closest-lcci.cpp"
+//#include "22_5_26-falling-squares.cpp"
+//#include "22_5_25-unique-substrings-in-wraparound-string.cpp"
+//#include "22_5_24-univalued-binary-tree.cpp"
+//#include "22_5_23-cut-off-trees-for-golf-event.cpp"
+//#include "22_5_22-nim-game.cpp"
+//#include "22_5_22-can-i-win.cpp"
 //#include "22_5_21-n-repeated-element-in-size-2n-array.cpp"
 //#include "22_5_20-find-right-interval.cpp"
 //#include "22_5_19-find-kth-largest-xor-coordinate-value.cpp"
@@ -225,7 +245,7 @@
 
 
 int main(void) {
-	//string input = "intervals = [[3,4],[2,3],[1,2]];";
+	//string input = "forest = [[63750247,40643210,95516857,89928134,66334829,58741187,76532780,45104329],[3219401,97566322,9135413,75944198,93735601,33923288,50116695,83660397],[64460750,53045740,31903386,78155821,90848739,38769489,99349027,85982891],[30628785,51077683,70534803,67460877,91077770,74197235,5696362,91459886],[56105195,82479378,45937951,52817583,2768114,43329099,28189138,21418604]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 

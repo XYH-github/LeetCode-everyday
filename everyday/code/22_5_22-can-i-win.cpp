@@ -37,12 +37,42 @@
 
 链接：https://leetcode.cn/problems/can-i-win
 
+    int maxChoosableInteger = 10, desiredTotal = 11;
+    Solution temp;
+    bool ret = temp.canIWin(maxChoosableInteger, desiredTotal);
+    cout << ret << endl;
+
 */
 
+#include <unordered_map>
+using namespace std;
 
 class Solution {
 public:
+    unordered_map<int, bool> memory_map;
     bool canIWin(int maxChoosableInteger, int desiredTotal) {
+        if ((1 + maxChoosableInteger) * maxChoosableInteger / 2 < desiredTotal)
+            return false;
+        return dfs(maxChoosableInteger, desiredTotal, 0, 0);
+    }
 
+    bool dfs(int maxChoosableInteger, int desiredTotal, int mask, int now_count) {
+        if (memory_map.count(mask)) {
+            return memory_map[mask];
+        }
+        memory_map[mask] = false;
+        for (int i = 1; i <= maxChoosableInteger; ++i) {
+            if (((mask >> (i - 1)) & 1) != 1) {
+                if (now_count + i >= desiredTotal) {
+                    memory_map[mask] = true;
+                    break;
+                }
+                if (!dfs(maxChoosableInteger, desiredTotal, mask | (1 << (i - 1)), now_count + i)) {
+                    memory_map[mask] = true;
+                    break;
+                }
+            }
+        }
+        return memory_map[mask];
     }
 };

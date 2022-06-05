@@ -190,3 +190,4 @@ public:
         return prefixSum(right + 1) - prefixSum(left);
     }
 };
+
