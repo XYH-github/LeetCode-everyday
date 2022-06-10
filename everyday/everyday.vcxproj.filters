@@ -798,6 +798,12 @@
     <ClCompile Include="code\22_6_2-delete-node-in-a-bst.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_1-matchsticks-to-square.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_1-partition-to-k-equal-sum-subsets.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

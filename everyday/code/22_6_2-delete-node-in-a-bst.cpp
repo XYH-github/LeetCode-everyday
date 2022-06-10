@@ -44,3 +44,81 @@ root 是合法的二叉搜索树
 链接：https://leetcode.cn/problems/delete-node-in-a-bst
 
 */
+
+
+
+//class Solution {
+//public:
+//    TreeNode* deleteNode(TreeNode* root, int key) {
+//        if (!root)
+//            return nullptr;
+//        if (root->val > key) {
+//            root->left = deleteNode(root->left, key);
+//            return root;
+//        }
+//        else if (root->val < key) {
+//            root->right = deleteNode(root->right, key);
+//            return root;
+//        }
+//        else {
+//            if (!root->left && !root->right)
+//                return nullptr;
+//            if (!root->left)
+//                return root->right;
+//            if (!root->right)
+//                return root->left;
+//            TreeNode* now_node = root->right;
+//            while (now_node->left)
+//                now_node = now_node->left;
+//            root->right = deleteNode(root->right, now_node->val);
+//            now_node->left = root->left;
+//            now_node->right = root->right;
+//            return now_node;
+//        }
+//    }
+//};
+
+
+
+//class Solution {
+//public:
+//    TreeNode* deleteNode(TreeNode* root, int key) {
+//        TreeNode* cur = root, * cur_par = nullptr;
+//        while (cur && cur->val != key) {
+//            cur_par = cur;
+//            if (cur->val > key)
+//                cur = cur->left;
+//            else if (cur->val < key)
+//                cur = cur->right;
+//        }
+//        if (!cur)
+//            return root;
+//        if (!cur->left && !cur->right)
+//            cur = nullptr;
+//        else if (!cur->left)
+//            cur = cur->right;
+//        else if (!cur->right)
+//            cur = cur->left;
+//        else {
+//            TreeNode* now_node = cur->right, * pre_node = cur;
+//            while (now_node->left) {
+//                pre_node = now_node;
+//                now_node = now_node->left;
+//            }
+//            if (pre_node == cur)
+//                pre_node->right = now_node->right;
+//            else
+//                pre_node->left = now_node->right;
+//            now_node->left = cur->left;
+//            now_node->right = cur->right;
+//            cur = now_node;
+//        }
+//        if (!cur_par)
+//            return cur;
+//        if (cur_par->val > key)
+//            cur_par->left = cur;
+//        else
+//            cur_par->right = cur;
+//        return root;
+//    }
+//};
