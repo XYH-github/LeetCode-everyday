@@ -804,6 +804,18 @@
     <ClCompile Include="code\22_6_1-partition-to-k-equal-sum-subsets.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_13-height-checker.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_12-find-and-replace-pattern.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_11-flip-string-to-monotone-increasing.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_10-count-different-palindromic-subsequences.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
