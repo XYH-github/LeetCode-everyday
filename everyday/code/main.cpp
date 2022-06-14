@@ -161,18 +161,12 @@
 //#include "22_4_25-random-pick-index.cpp"
 //#include "22_4_26-projection-area-of-3d-shapes.cpp"
 
-//#include "22_6_1-partition-to-k-equal-sum-subsets.cpp"
+#include "22_6_1-partition-to-k-equal-sum-subsets.cpp"
 //#include "22_6_1-matchsticks-to-square.cpp"
 //#include "22_6_2-delete-node-in-a-bst.cpp"
 //#include "22_6_3-consecutive-numbers-sum.cpp"
 //#include "22_6_4-unique-email-addresses.cpp"
 //#include "22_6_5-generate-random-point-in-a-circle.cpp"
-//
-#include "22_6_10-count-different-palindromic-subsequences.cpp" 
-//#include "22_6_11-flip-string-to-monotone-increasing.cpp"
-//#include "22_6_12-find-and-replace-pattern.cpp"
-//#include "22_6_13-height-checker.cpp"
-// 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
 //#include "22_5_29-validate-ip-address.cpp"
 //#include "22_5_28-remove-outermost-parentheses.cpp"

@@ -258,10 +258,6 @@
     <ClCompile Include="code\22_5_9-di-string-match.cpp" />
     <ClCompile Include="code\22_6_1-matchsticks-to-square.cpp" />
     <ClCompile Include="code\22_6_1-partition-to-k-equal-sum-subsets.cpp" />
-    <ClCompile Include="code\22_6_10-count-different-palindromic-subsequences.cpp" />
-    <ClCompile Include="code\22_6_11-flip-string-to-monotone-increasing.cpp" />
-    <ClCompile Include="code\22_6_12-find-and-replace-pattern.cpp" />
-    <ClCompile Include="code\22_6_13-height-checker.cpp" />
     <ClCompile Include="code\22_6_2-delete-node-in-a-bst.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />
