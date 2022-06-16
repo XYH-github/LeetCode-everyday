@@ -831,6 +831,24 @@
     <ClCompile Include="code\22_6_14-diagonal-traverse.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_15-find-k-th-smallest-pair-distance.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_16-k-diff-pairs-in-an-array.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_27-pacific-atlantic-water-flow.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_28-sort-array-by-parity.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_29-construct-quad-tree.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_4_30-smallest-range-i.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

@@ -43,35 +43,37 @@ nums 是一个非递减数组
 #include <vector>
 using namespace std;
 
-//class Solution {
-//public:
-//    vector<int> searchRange(vector<int>& nums, int target) {
-//        int len = nums.size();
-//        if (len == 0)
-//            return { -1, -1 };
-//        int left = 0, right = len - 1;
-//        while (left <= right) {
-//            int mid = left + ((right - left) >> 1);
-//            if (nums[mid] <= target)
-//                left = mid + 1;
-//            else
-//                right = mid - 1;
-//        }
-//        int temp = right;
-//        left = 0, right = len - 1;
-//        while (left <= right) {
-//            int mid = left + ((right - left) >> 1);
-//            if (nums[mid] < target)
-//                left = mid + 1;
-//            else
-//                right = mid - 1;
-//        }
-//        if (left < len || temp >= 0 && nums[temp] == target && nums[left] == target)
-//            return { left, temp };
-//        else
-//            return { -1, -1 };
-//    }
-//};
+
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int len = nums.size();
+        if (len == 0)
+            return { -1, -1 };
+        int left = 0, right = len - 1;
+        while (left <= right) {
+            int mid = left + ((right - left) >> 1);
+            if (nums[mid] <= target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        int temp = right;
+        left = 0, right = len - 1;
+        while (left <= right) {
+            int mid = left + ((right - left) >> 1);
+            if (nums[mid] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        if (left < len || temp >= 0 && nums[temp] == target && nums[left] == target)
+            return { left, temp };
+        else
+            return { -1, -1 };
+    }
+};
+
 
 
 //class Solution {
@@ -106,27 +108,28 @@ using namespace std;
 //};
 
 
-class Solution {
-public:
-    vector<int> searchRange(vector<int>& nums, int target) {
-        int len = nums.size();
-        if (len == 0)
-            return { -1, -1 };
-        int left = 0, right = len - 1;
-        while (left < right) {
-            int mid = left + ((right - left) >> 1);
-            if (nums[mid] <= target)
-                left = mid + 1;
-            else
-                right = mid;
-        }
-        int temp = nums[left] == target ? left : left - 1;
-        if (temp < 0 || nums[temp] != target)
-            return { -1, -1 };
-        int b = temp;
-        while (temp--)
-            if (nums[temp] != target)
-                break;
-        return { temp + 1, b };
-    }
-};
+
+//class Solution {
+//public:
+//    vector<int> searchRange(vector<int>& nums, int target) {
+//        int len = nums.size();
+//        if (len == 0)
+//            return { -1, -1 };
+//        int left = 0, right = len - 1;
+//        while (left < right) {
+//            int mid = left + ((right - left) >> 1);
+//            if (nums[mid] <= target)
+//                left = mid + 1;
+//            else
+//                right = mid;
+//        }
+//        int temp = nums[left] == target ? left : left - 1;
+//        if (temp < 0 || nums[temp] != target)
+//            return { -1, -1 };
+//        int b = temp;
+//        while (temp--)
+//            if (nums[temp] != target)
+//                break;
+//        return { temp + 1, b };
+//    }
+//};

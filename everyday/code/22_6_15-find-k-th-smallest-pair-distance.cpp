@@ -34,4 +34,65 @@ n == nums.length
 
 链接：https://leetcode.cn/problems/find-k-th-smallest-pair-distance
 
+    vector<int> nums = { 1, 1, 3 };
+    int k = 1;
+    Solution temp;
+    int ret = temp.smallestDistancePair(nums, k);
+    cout << ret << endl;
+
 */
+
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+//class Solution {
+//public:
+//    int smallestDistancePair(vector<int>& nums, int k) {
+//        int len = nums.size();
+//        sort(nums.begin(), nums.end());
+//        int left = 0;
+//        int right = *max_element(nums.begin(), nums.end()) - *min_element(nums.begin(), nums.end());
+//        while (left < right) {
+//            int mid = left + ((right - left) >> 1);
+//            int cnt = 0;
+//            for (int i = 0; i < len - 1; ++i) {
+//                int pos = upper_bound(nums.begin() + i, nums.end(), mid + nums[i]) - nums.begin();
+//                cnt += pos - i - 1;
+//            }
+//            if (cnt >= k)
+//                right = mid;
+//            else
+//                left = mid + 1;
+//        }
+//        return left;
+//    }
+//};
+
+
+
+class Solution {
+public:
+    int smallestDistancePair(vector<int>& nums, int k) {
+        int len = nums.size();
+        sort(nums.begin(), nums.end());
+        int left = 0;
+        int right = *max_element(nums.begin(), nums.end()) - *min_element(nums.begin(), nums.end());
+        while (left < right) {
+            int mid = left + ((right - left) >> 1);
+            int cnt = 0;
+            int first = 0, second = 1;
+            while (second < len) {
+                while (nums[second] - nums[first] > mid && first <= second)
+                    first++;
+                cnt += second - first;
+                second++;
+            }
+            if (cnt >= k)
+                right = mid;
+            else
+                left = mid + 1;
+        }
+        return left;
+    }
+};
