@@ -167,16 +167,11 @@
 //#include "22_6_3-consecutive-numbers-sum.cpp"
 //#include "22_6_4-unique-email-addresses.cpp"
 //#include "22_6_5-generate-random-point-in-a-circle.cpp"
-//#include "22_6_6-my-calendar-iii.cpp"
-//#include "22_6_7-koko-eating-bananas.cpp"
-//#include "22_6_8-valid-boomerang.cpp"
-//#include "22_6_9-random-point-in-non-overlapping-rectangles.cpp"
-//#include "22_6_10-count-different-palindromic-subsequences.cpp" 
+//
+#include "22_6_10-count-different-palindromic-subsequences.cpp" 
 //#include "22_6_11-flip-string-to-monotone-increasing.cpp"
 //#include "22_6_12-find-and-replace-pattern.cpp"
 //#include "22_6_13-height-checker.cpp"
-//#include "22_6_14-diagonal-traverse.cpp"
-#include "22_6_15-find-k-th-smallest-pair-distance.cpp"
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
 //#include "22_5_29-validate-ip-address.cpp"
@@ -257,7 +252,7 @@
 
 
 int main(void) {
-	//string input = "mat = [[1,2,3],[4,5,6],[7,8,9]];";
+	//string input = "forest = [[63750247,40643210,95516857,89928134,66334829,58741187,76532780,45104329],[3219401,97566322,9135413,75944198,93735601,33923288,50116695,83660397],[64460750,53045740,31903386,78155821,90848739,38769489,99349027,85982891],[30628785,51077683,70534803,67460877,91077770,74197235,5696362,91459886],[56105195,82479378,45937951,52817583,2768114,43329099,28189138,21418604]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
