@@ -262,10 +262,15 @@
     <ClCompile Include="code\22_6_11-flip-string-to-monotone-increasing.cpp" />
     <ClCompile Include="code\22_6_12-find-and-replace-pattern.cpp" />
     <ClCompile Include="code\22_6_13-height-checker.cpp" />
+    <ClCompile Include="code\22_6_14-diagonal-traverse.cpp" />
     <ClCompile Include="code\22_6_2-delete-node-in-a-bst.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />
     <ClCompile Include="code\22_6_5-generate-random-point-in-a-circle.cpp" />
+    <ClCompile Include="code\22_6_6-my-calendar-iii.cpp" />
+    <ClCompile Include="code\22_6_7-koko-eating-bananas.cpp" />
+    <ClCompile Include="code\22_6_8-valid-boomerang.cpp" />
+    <ClCompile Include="code\22_6_9-random-point-in-non-overlapping-rectangles.cpp" />
     <ClCompile Include="code\BinaryTree.cpp" />
     <ClCompile Include="code\22_3_2-find-the-closest-palindrome.cpp" />
     <ClCompile Include="code\LinkList.cpp" />
