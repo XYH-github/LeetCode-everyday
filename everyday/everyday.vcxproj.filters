@@ -849,6 +849,9 @@
     <ClCompile Include="code\22_4_30-smallest-range-i.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_17-duplicate-zeros.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

@@ -269,6 +269,7 @@
     <ClCompile Include="code\22_6_14-diagonal-traverse.cpp" />
     <ClCompile Include="code\22_6_15-find-k-th-smallest-pair-distance.cpp" />
     <ClCompile Include="code\22_6_16-k-diff-pairs-in-an-array.cpp" />
+    <ClCompile Include="code\22_6_17-duplicate-zeros.cpp" />
     <ClCompile Include="code\22_6_2-delete-node-in-a-bst.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />

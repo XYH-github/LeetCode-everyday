@@ -162,7 +162,7 @@
 //#include "22_4_26-projection-area-of-3d-shapes.cpp"
 //#include "22_4_27-pacific-atlantic-water-flow.cpp"
 //#include "22_4_28-sort-array-by-parity.cpp"
-#include "22_4_29-construct-quad-tree.cpp"
+//#include "22_4_29-construct-quad-tree.cpp"
 //#include "22_4_30-smallest-range-i.cpp"
 
 //#include "22_6_1-partition-to-k-equal-sum-subsets.cpp"
@@ -182,6 +182,7 @@
 //#include "22_6_14-diagonal-traverse.cpp"
 //#include "22_6_15-find-k-th-smallest-pair-distance.cpp"
 //#include "22_6_16-k-diff-pairs-in-an-array.cpp"
+//#include "22_6_17-duplicate-zeros.cpp"
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
 //#include "22_5_29-validate-ip-address.cpp"
