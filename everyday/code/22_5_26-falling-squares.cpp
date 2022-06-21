@@ -52,36 +52,6 @@
 #include <map>
 using namespace std;
 
-
-class Solution {
-public:
-    vector<int> fallingSquares(vector<vector<int>>& positions) {
-        int len = positions.size();
-        vector<int> ret(len);
-        height_map[0] = 0;
-        for (int i = 0; i < len; ++i) {
-            int height = positions[i][1];
-            int left = positions[i][0];
-            int right = positions[i][0] + positions[i][1] - 1;
-            auto lp = height_map.upper_bound(left), rp = height_map.upper_bound(right);
-            int temp = prev(rp)->second;
-            for (auto iter = prev(lp); iter != rp; iter++) {
-                height = max(height, positions[i][1] + iter->second);
-            }
-            height_map.erase(lp, rp);
-            height_map[left] = height;
-            if (rp == height_map.end() || rp->first != right + 1)
-                height_map[right + 1] = temp;
-            ret[i] = i > 0 ? max(ret[i - 1], height) : height;
-        }
-        return ret;
-    }
-
-private:
-    map<int, int> height_map;
-};
-
-
 //class Solution {
 //public:
 //    vector<int> fallingSquares(vector<vector<int>>& positions) {
@@ -136,112 +106,112 @@ private:
 //    }
 //};
 
-//class Node {
-//public:
-//    Node* left_node;
-//    Node* right_node;
-//    int left;
-//    int right;
-//    int mid;
-//    int val;
-//    bool lazy;
-//
-//    Node(int left, int right) {
-//        this->left = left;
-//        this->right = right;
-//        this->mid = left + (right - left) / 2;
-//        this->left_node = this->right_node = nullptr;
-//        this->lazy = false;
-//        this->val = 0;
-//    }
-//};
-//
-//class SegmentTree {
-//private:
-//    Node* root;
-//
-//    void modify(int left, int right, int val, Node* node) {
-//        if (left > right)
-//            return;
-//        if (node->left >= left && node->right <= right) {
-//            node->val = val;
-//            node->lazy = true;
-//            return;
-//        }
-//        pushdown(node);
-//        if (left <= node->mid)
-//            modify(left, right, val, node->left_node);
-//        if (right > node->mid)
-//            modify(left, right, val, node->right_node);
-//        pushup(node);
-//    }
-//
-//    int query(int left, int right, Node* node) {
-//        if (left > right)
-//            return 0;
-//        if (node->left >= left && node->right <= right)
-//            return node->val;
-//        pushdown(node);
-//        int val = 0;
-//        if (left <= node->mid)
-//            val = max(val, query(left, right, node->left_node));
-//        if (right > node->mid)
-//            val = max(val, query(left, right, node->right_node));
-//        return val;
-//    }
-//
-//    void pushdown(Node *node) {
-//        if (!node->left_node)
-//            node->left_node = new Node(node->left, node->mid);
-//        if (!node->right_node)
-//            node->right_node = new Node(node->mid + 1, node->right);
-//        if (node->lazy) {
-//            Node* left = node->left_node;
-//            Node* right = node->right_node;
-//            left->val = node->val;
-//            right->val = node->val;
-//            left->lazy = node->lazy;
-//            right->lazy = node->lazy;
-//            node->lazy = false;
-//        }
-//    }
-//
-//    void pushup(Node* node) {
-//        node->val = max(node->left_node->val, node->right_node->val);
-//    }
-//
-//public:
-//    SegmentTree() {
-//        root = new Node(1, 1e9);
-//    }
-//
-//    void modify(int left, int right, int val) {
-//        modify(left, right, val, root);
-//    }
-//
-//    int query(int left, int right) {
-//        return query(left, right, root);
-//    }
-//
-//};
-//
-//
-//class Solution {
-//public:
-//    vector<int> fallingSquares(vector<vector<int>>& positions) {
-//        int len = positions.size();
-//        vector<int> ret(len + 1);
-//        SegmentTree* tree = new SegmentTree();
-//        ret[0] = 0;
-//        for (int i = 1; i <= len; ++i) {
-//            int left = positions[i - 1][0];
-//            int size = positions[i - 1][1];
-//            int right = left + size - 1;
-//            int high = tree->query(left, right) + size;
-//            ret[i] = max(ret[i - 1], high);
-//            tree->modify(left, right, high);
-//        }
-//        ret.erase(ret.begin());
-//        return ret;
-//    }
-//};
+class Node {
+public:
+    Node* left_node;
+    Node* right_node;
+    int left;
+    int right;
+    int mid;
+    int val;
+    bool lazy;
+
+    Node(int left, int right) {
+        this->left = left;
+        this->right = right;
+        this->mid = left + (right - left) / 2;
+        this->left_node = this->right_node = nullptr;
+        this->lazy = false;
+        this->val = 0;
+    }
+};
+
+class SegmentTree {
+private:
+    Node* root;
+
+    void modify(int left, int right, int val, Node* node) {
+        if (left > right)
+            return;
+        if (node->left >= left && node->right <= right) {
+            node->val = val;
+            node->lazy = true;
+            return;
+        }
+        pushdown(node);
+        if (left <= node->mid)
+            modify(left, right, val, node->left_node);
+        if (right > node->mid)
+            modify(left, right, val, node->right_node);
+        pushup(node);
+    }
+
+    int query(int left, int right, Node* node) {
+        if (left > right)
+            return 0;
+        if (node->left >= left && node->right <= right)
+            return node->val;
+        pushdown(node);
+        int val = 0;
+        if (left <= node->mid)
+            val = max(val, query(left, right, node->left_node));
+        if (right > node->mid)
+            val = max(val, query(left, right, node->right_node));
+        return val;
+    }
+
+    void pushdown(Node *node) {
+        if (!node->left_node)
+            node->left_node = new Node(node->left, node->mid);
+        if (!node->right_node)
+            node->right_node = new Node(node->mid + 1, node->right);
+        if (node->lazy) {
+            Node* left = node->left_node;
+            Node* right = node->right_node;
+            left->val = node->val;
+            right->val = node->val;
+            left->lazy = node->lazy;
+            right->lazy = node->lazy;
+            node->lazy = false;
+        }
+    }
+
+    void pushup(Node* node) {
+        node->val = max(node->left_node->val, node->right_node->val);
+    }
+
+public:
+    SegmentTree() {
+        root = new Node(1, 1e9);
+    }
+
+    void modify(int left, int right, int val) {
+        modify(left, right, val, root);
+    }
+
+    int query(int left, int right) {
+        return query(left, right, root);
+    }
+
+};
+
+
+class Solution {
+public:
+    vector<int> fallingSquares(vector<vector<int>>& positions) {
+        int len = positions.size();
+        vector<int> ret(len + 1);
+        SegmentTree* tree = new SegmentTree();
+        ret[0] = 0;
+        for (int i = 1; i <= len; ++i) {
+            int left = positions[i - 1][0];
+            int size = positions[i - 1][1];
+            int right = left + size - 1;
+            int high = tree->query(left, right) + size;
+            ret[i] = max(ret[i - 1], high);
+            tree->modify(left, right, high);
+        }
+        ret.erase(ret.begin());
+        return ret;
+    }
+};
