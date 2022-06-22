@@ -185,13 +185,14 @@
 //#include "22_6_17-duplicate-zeros.cpp"
 //#include "22_6_18-4ueAj6.cpp"
 //#include "22_6_19-most-frequent-subtree-sum.cpp"
+//#include "22_6_20-range-module.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
 //#include "22_5_29-validate-ip-address.cpp"
 //#include "22_5_28-remove-outermost-parentheses.cpp"
 //#include "22_5_27-find-closest-lcci.cpp"
-#include "22_5_26-falling-squares.cpp"
+//#include "22_5_26-falling-squares.cpp"
 //#include "22_5_25-unique-substrings-in-wraparound-string.cpp"
 //#include "22_5_24-univalued-binary-tree.cpp"
 //#include "22_5_23-cut-off-trees-for-golf-event.cpp"
@@ -269,7 +270,6 @@ int main(void) {
 	//string input = "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
-
 
 }
 

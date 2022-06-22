@@ -49,6 +49,31 @@ myCalendarThree.book(25, 55); // 返回 3
 #include <map>
 using namespace std;
 
+//class MyCalendarThree {
+//public:
+//    MyCalendarThree() {
+//
+//    }
+//
+//    int book(int start, int end) {
+//        dec_map[start]++;
+//        dec_map[end]--;
+//        int cnt = 0;
+//        int ret = 0;
+//        for (auto dec : dec_map) {
+//            cnt += dec.second;
+//            ret = max(ret, cnt);
+//        }
+//        return ret;
+//    }
+//
+//private:
+//    map<int, int> dec_map;
+//};
+
+#include <unordered_map>
+using namespace std;
+
 class MyCalendarThree {
 public:
     MyCalendarThree() {
@@ -56,17 +81,26 @@ public:
     }
 
     int book(int start, int end) {
-        dec_map[start]++;
-        dec_map[end]--;
-        int cnt = 0;
-        int ret = 0;
-        for (auto dec : dec_map) {
-            cnt += dec.second;
-            ret = max(ret, cnt);
-        }
-        return ret;
+        update(start, end - 1, 0, 1e9, 0);
+        return seg_map[0].first;
     }
 
 private:
-    map<int, int> dec_map;
+    unordered_map<int, pair<int, int>> seg_map;
+
+    void update(int start, int end, int left, int right, int key) {
+        if (start > end)
+            return;
+        if (left >= start && right <= end) {
+            seg_map[key].first++;
+            seg_map[key].second++;
+            return;
+        }
+        int mid = left + (right - left) / 2;
+        if (start <= mid)
+            update(start, end, left, mid, 2 * key + 1);
+        if (mid < end)
+            update(start, end, mid + 1, right, 2 * key + 2);
+        seg_map[key].first = seg_map[key].second + max(seg_map[2 * key + 1].first, seg_map[2 * key + 2].first);
+    }
 };

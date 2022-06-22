@@ -87,107 +87,111 @@ using namespace std;
 //};
 
 
-//class NumArray {
-//private:
-//    vector<int> segmentTree;
-//    int n;
-//
-//    void build(int node, int s, int e, vector<int>& nums) {
-//        if (s == e) {
-//            segmentTree[node] = nums[s];
-//            return;
-//        }
-//        int m = s + (e - s) / 2;
-//        build(node * 2 + 1, s, m, nums);
-//        build(node * 2 + 2, m + 1, e, nums);
-//        segmentTree[node] = segmentTree[node * 2 + 1] + segmentTree[node * 2 + 2];
-//    }
-//
-//    void change(int index, int val, int node, int s, int e) {
-//        if (s == e) {
-//            segmentTree[node] = val;
-//            return;
-//        }
-//        int m = s + (e - s) / 2;
-//        if (index <= m) {
-//            change(index, val, node * 2 + 1, s, m);
-//        }
-//        else {
-//            change(index, val, node * 2 + 2, m + 1, e);
-//        }
-//        segmentTree[node] = segmentTree[node * 2 + 1] + segmentTree[node * 2 + 2];
-//    }
-//
-//    int range(int left, int right, int node, int s, int e) {
-//        if (left == s && right == e) {
-//            return segmentTree[node];
-//        }
-//        int m = s + (e - s) / 2;
-//        if (right <= m) {
-//            return range(left, right, node * 2 + 1, s, m);
-//        }
-//        else if (left > m) {
-//            return range(left, right, node * 2 + 2, m + 1, e);
-//        }
-//        else {
-//            return range(left, m, node * 2 + 1, s, m) + range(m + 1, right, node * 2 + 2, m + 1, e);
-//        }
-//    }
-//
-//public:
-//    NumArray(vector<int>& nums) : n(nums.size()), segmentTree(nums.size() * 4) {
-//        build(0, 0, n - 1, nums);
-//    }
-//
-//    void update(int index, int val) {
-//        change(index, val, 0, 0, n - 1);
-//    }
-//
-//    int sumRange(int left, int right) {
-//        return range(left, right, 0, 0, n - 1);
-//    }
-//};
-
-
 class NumArray {
 private:
-    vector<int> tree;
-    vector<int>& nums;
-
-    int lowBit(int x) {
-        return x & -x;
+    void build(int start, int end, int index) {
+        if (start == end) {
+            _nums[index] = _matrix[start];
+            return;
+        }
+        int mid = start + (end - start) / 2;
+        build(start, mid, 2 * index + 1);
+        build(mid + 1, end, 2 * index + 2);
+        _nums[index] = _nums[2 * index + 1] + _nums[2 * index + 2];
     }
 
-    void add(int index, int val) {
-        while (index < tree.size()) {
-            tree[index] += val;
-            index += lowBit(index);
+    void change(int pre_index, int start, int end, int index, int num) {
+        if (start == end) {
+            _nums[index] = num;
+            return;
         }
+        int mid = start + (end - start) / 2;
+        if (mid < pre_index) {
+            change(pre_index, mid + 1, end, 2 * index + 2, num);
+        }
+        else {
+            change(pre_index, start, mid, 2 * index + 1, num);
+        }
+        _nums[index] = _nums[2 * index + 1] + _nums[2 * index + 2];
     }
 
-    int prefixSum(int index) {
-        int sum = 0;
-        while (index > 0) {
-            sum += tree[index];
-            index -= lowBit(index);
+    int sum(int left, int right, int start, int end, int index) {
+        if (left == start && right == end) {
+            return _nums[index];
         }
-        return sum;
+        int mid = start + (end - start) / 2;
+        if (mid >= right)
+            return sum(left, right, start, mid, 2 * index + 1);
+        else if (mid < left)
+            return sum(left, right, mid + 1, end, 2 * index + 2);
+        else
+            return sum(left, mid, start, mid, 2 * index + 1) +
+            sum(mid + 1, right, mid + 1, end, 2 * index + 2);
     }
 
 public:
-    NumArray(vector<int>& nums) : tree(nums.size() + 1), nums(nums) {
-        for (int i = 0; i < nums.size(); i++) {
-            add(i + 1, nums[i]);
-        }
+    NumArray(vector<int>& nums) : _matrix(nums), _nums(nums.size() * 4), _size(nums.size()) {
+        build(0, _size - 1, 0);
     }
 
+
     void update(int index, int val) {
-        add(index + 1, val - nums[index]);
-        nums[index] = val;
+        change(index, 0, _size - 1, 0, val);
     }
 
     int sumRange(int left, int right) {
-        return prefixSum(right + 1) - prefixSum(left);
+        return sum(left, right, 0, _size - 1, 0);
     }
+
+private:
+    vector<int> _nums;
+    vector<int> _matrix;
+    int _size;
 };
+
+
+
+//class NumArray {
+//public:
+//    NumArray(vector<int>& nums) : _nums(nums), tree(nums.size() + 1), _len(nums.size() + 1) {
+//        for (int i = 0; i < _len - 1; ++i)
+//            add(i + 1, _nums[i]);
+//    }
+//
+//    void update(int index, int val) {
+//        add(index + 1, val - _nums[index]);
+//        _nums[index] = val;
+//    }
+//
+//    int sumRange(int left, int right) {
+//        return query(right + 1) - query(left);
+//    }
+//
+//private:
+//    int lowBit(int nums) {
+//        return nums & -nums;
+//    }
+//
+//    void add(int index, int val) {
+//        while (index < _len) {
+//            tree[index] += val;
+//            index += lowBit(index);
+//        }
+//    }
+//
+//    int query(int index) {
+//        int ret = 0;
+//        while (index > 0) {
+//            ret += tree[index];
+//            index -= lowBit(index);
+//        }
+//        return ret;
+//    }
+//
+//
+//private:
+//    vector<int> _nums;
+//    vector<int> tree;
+//    int _len;
+//};
 

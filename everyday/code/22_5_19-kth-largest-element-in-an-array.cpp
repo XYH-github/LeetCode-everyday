@@ -32,11 +32,14 @@
 */
 
 #include <vector>
+#include "time.h"
 using namespace std;
 
 //class Solution {
 //public:
 //    int dfs(vector<int>& nums, int left, int right, int index) {
+//        int temp = rand() % (right - left + 1) + left;
+//        swap(nums[temp], nums[left]);
 //        int cmp_num = nums[left];
 //        int start = left;
 //        int end = right;
@@ -56,6 +59,7 @@ using namespace std;
 //
 //
 //    int findKthLargest(vector<int>& nums, int k) {
+//        srand((unsigned)time(NULL));
 //        return dfs(nums, 0, nums.size() - 1, k - 1);
 //    }
 //};
@@ -63,35 +67,37 @@ using namespace std;
 
 class Solution {
 public:
-    void adjust_heap(vector<int>& nums, int father, int len) {
-        int left = 2 * father + 1;
-        int right = 2 * father + 2;
-        int max = father;
-        if (left < len && nums[left] > nums[max])
-            max = left;
-        if (right < len && nums[right] > nums[max])
-            max = right;
-        if (max != father) {
-            swap(nums[father], nums[max]);
-            adjust_heap(nums, max, len);
-        }
-    }
-
-    void buildMaxHeap(vector<int>& nums, int len) {
-        for (int i = len / 2; i >= 0; --i) {
-            adjust_heap(nums, i, len);
-        }
-    }
-
-
     int findKthLargest(vector<int>& nums, int k) {
-        int len = nums.size();
-        buildMaxHeap(nums, len);
-        for (int i = 0; i < k; ++i) {
-            swap(nums[0], nums[nums.size() - 1 - i]);
-            --len;
-            adjust_heap(nums, 0, len);
+        _nums = nums;
+        int len = _nums.size();
+        buildHeap(len);
+        int i = 1;
+        while (--k) {
+            swap(_nums[0], _nums[nums.size() - i++]);
+            adjustHeap(0, --len);
         }
-        return nums[0];
+        return _nums[0];
+    }
+
+private:
+    vector<int> _nums;
+
+    void adjustHeap(int node, int len) {
+        int left = 2 * node + 1;
+        int right = 2 * node + 2;
+        int max = node;
+        if (left < len && _nums[left] > _nums[max])
+            max = left;
+        if (right < len && _nums[right] > _nums[max])
+            max = right;
+        if (max != node) {
+            swap(_nums[node], _nums[max]);
+            adjustHeap(max, len);
+        }
+    }
+
+    void buildHeap(int len) {
+        for (int i = len / 2; i >= 0; --i)
+            adjustHeap(i, len);
     }
 };
