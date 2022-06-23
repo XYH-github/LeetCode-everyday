@@ -1,15 +1,13 @@
-﻿#include <vector>
-#include <numeric>
-#include "Print.h"
-
-using namespace std;
-
-/*
+﻿/*
+ 
+ 
 给你一个正整数数组 arr ，请你计算所有可能的奇数长度子数组的和。
 
 子数组 定义为原数组中的一个连续子序列。
 
 请你返回 arr 中 所有奇数长度子数组的和 。
+
+ 
 
 示例 1：
 
@@ -35,14 +33,30 @@ using namespace std;
 
 输入：arr = [10,11,12]
 输出：66
+ 
+
+提示：
+
+1 <= arr.length <= 100
+1 <= arr[i] <= 1000
+ 
+
+链接：https://leetcode.cn/problems/sum-of-all-odd-length-subarrays
 
 
-vector<int> nums = { 1, 4, 2, 5, 3 };
+    vector<int> nums = { 1, 4, 2, 5, 3 };
     Solution temp;
     int result = temp.sumOddLengthSubarrays(nums);
     cout << result << endl;
 
+
 */
+
+#include <vector>
+#include <numeric>
+#include "Print.h"
+
+using namespace std;
 
 
 //class Solution {

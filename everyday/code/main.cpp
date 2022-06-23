@@ -3,6 +3,8 @@
 //#include "21_8_28-sum_for_onedimenarray.cpp"
 //#include "21_8_29-sum_for_oddlength_array.cpp"
 //#include "21_9_2-linedlist_get_reciprocal.cpp"
+
+
 //#include "21_9_5-rank7_gene_rank10.cpp"
 //#include "21_9_30-area_for_retang.cpp"
 //#include "21_8_30-selete_num_by_weight.cpp"
@@ -31,6 +33,34 @@
 //#include "21_10_29-self-crossing.cpp"
 //#include "21_11_25-pig-die.cpp"
 //#include "21_11_29-k-th-smallest-prime-fraction.cpp"
+//#include "21_12_10-shortest-completing-word.cpp"
+//#include "21_12_11-online-election.cpp"
+//#include "21_12_12-to-lower-case.cpp"
+//#include "21_12_13-trapping-rain-water.cpp"
+//#include "21_12_13-max-increase-to-keep-city-skyline.cpp"
+//#include "21_12_14-single-element-in-a-sorted-array.cpp"
+//#include "21_12_14-course-schedule-iii.cpp"
+//#include "21_12_14-course-schedule.cpp"
+//#include "21_12_15-lucky-numbers-in-a-matrix.cpp"
+//#include "21_12_14-course-schedule-iv.cpp"
+//#include "21_12_15-loud-and-rich.cpp"
+//#include "21_12_16-maximum-number-of-visible-points.cpp"
+//#include "21_12_17-water-bottles.cpp"
+//#include "21_12_18-battleships-in-a-board.cpp"
+//#include "21_12_22-repeated-string-match.cpp"
+//#include "21_12_23-longest-duplicate-substring.cpp"
+//#include "21_12_24-maximum-number-of-eaten-apples.cpp"
+//#include "21_12_25-even-odd-tree.cpp"
+//#include "21_12_26-occurrences-after-bigram.cpp"
+//#include "21_12_27-friends-of-appropriate-ages.cpp"
+//#include "21_12_28-concatenated-words.cpp"
+//#include "21_12_28-implement-trie-prefix-tree.cpp"
+// 
+//#include "21_12_29-count-special-quadruplets.cpp"
+//#include "21_12_30-hand-of-straights.cpp"
+//#include "21_12_31-perfect-number.cpp"
+//#include "21_11_26-search-in-a-binary-search-tree.cpp"
+//#include "21_11_27-random-flip-matrix.cpp"
 //#include "21_12_6-truncate-sentence.cpp"
 //#include "21_12_5-super-pow.cpp"
 //#include "21_12_7-coloring-a-border.cpp"
@@ -186,6 +216,9 @@
 //#include "22_6_18-4ueAj6.cpp"
 //#include "22_6_19-most-frequent-subtree-sum.cpp"
 //#include "22_6_20-range-module.cpp"
+//#include "22_6_21-defanging-an-ip-address.cpp"
+//#include "22_6_22-find-bottom-left-tree-value.cpp"
+//#include "22_6_23-substring-with-concatenation-of-all-words.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
@@ -234,34 +267,7 @@
 //#include "22_1_3-day-of-the-week.cpp"
 //#include "22_1_5-replace-all-s-to-avoid-consecutive-repeating-characters.cpp"
 //#include "22_1_6-simplify-path.cpp"
-//#include "21_12_10-shortest-completing-word.cpp"
-//#include "21_12_11-online-election.cpp"
-//#include "21_12_12-to-lower-case.cpp"
-//#include "21_12_13-trapping-rain-water.cpp"
-//#include "21_12_13-max-increase-to-keep-city-skyline.cpp"
-//#include "21_12_14-single-element-in-a-sorted-array.cpp"
-//#include "21_12_14-course-schedule-iii.cpp"
-//#include "21_12_14-course-schedule.cpp"
-//#include "21_12_15-lucky-numbers-in-a-matrix.cpp"
-//#include "21_12_14-course-schedule-iv.cpp"
-//#include "21_12_15-loud-and-rich.cpp"
-//#include "21_12_16-maximum-number-of-visible-points.cpp"
-//#include "21_12_17-water-bottles.cpp"
-//#include "21_12_18-battleships-in-a-board.cpp"
-//#include "21_12_22-repeated-string-match.cpp"
-//#include "21_12_23-longest-duplicate-substring.cpp"
-//#include "21_12_24-maximum-number-of-eaten-apples.cpp"
-//#include "21_12_25-even-odd-tree.cpp"
-//#include "21_12_26-occurrences-after-bigram.cpp"
-//#include "21_12_27-friends-of-appropriate-ages.cpp"
-//#include "21_12_28-concatenated-words.cpp"
-//#include "21_12_28-implement-trie-prefix-tree.cpp"
-// 
-//#include "21_12_29-count-special-quadruplets.cpp"
-//#include "21_12_30-hand-of-straights.cpp"
-//#include "21_12_31-perfect-number.cpp"
-//#include "21_11_26-search-in-a-binary-search-tree.cpp"
-//#include "21_11_27-random-flip-matrix.cpp"
+
 
 //#include "temp.cpp"
 
@@ -271,6 +277,8 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
+	string a = "1", b = "10";
+	cout << (a < b) << endl;
 }
 
 

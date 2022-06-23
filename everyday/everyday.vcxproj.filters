@@ -855,6 +855,15 @@
     <ClCompile Include="code\22_6_20-range-module.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_21-defanging-an-ip-address.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_22-find-bottom-left-tree-value.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_23-substring-with-concatenation-of-all-words.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
