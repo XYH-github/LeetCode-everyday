@@ -86,8 +86,11 @@
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />
     <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp" />
+    <ClCompile Include="code\21_9_1-compare-version-numbers.cpp" />
     <ClCompile Include="code\21_9_2-linedlist_get_reciprocal.cpp" />
+    <ClCompile Include="code\21_9_3-smallest-k-lcci.cpp" />
     <ClCompile Include="code\21_9_30-area_for_retang.cpp" />
+    <ClCompile Include="code\21_9_4-fei-bo-na-qi-shu-lie-lcof.cpp" />
     <ClCompile Include="code\21_9_5-rank7_gene_rank10.cpp" />
     <ClCompile Include="code\21_12_10-shortest-completing-word.cpp" />
     <ClCompile Include="code\21_12_11-online-election.cpp" />
@@ -275,6 +278,7 @@
     <ClCompile Include="code\22_6_21-defanging-an-ip-address.cpp" />
     <ClCompile Include="code\22_6_22-find-bottom-left-tree-value.cpp" />
     <ClCompile Include="code\22_6_23-substring-with-concatenation-of-all-words.cpp" />
+    <ClCompile Include="code\22_6_24-find-largest-value-in-each-tree-row.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />
     <ClCompile Include="code\22_6_5-generate-random-point-in-a-circle.cpp" />

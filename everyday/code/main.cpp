@@ -2,12 +2,15 @@
 
 //#include "21_8_28-sum_for_onedimenarray.cpp"
 //#include "21_8_29-sum_for_oddlength_array.cpp"
+#include "21_8_30-selete_num_by_weight.cpp"
+//#include "21_9_1-compare-version-numbers.cpp"
 //#include "21_9_2-linedlist_get_reciprocal.cpp"
-
-
+//#include "21_9_3-smallest-k-lcci.cpp"
+//#include "21_9_4-fei-bo-na-qi-shu-lie-lcof.cpp"
 //#include "21_9_5-rank7_gene_rank10.cpp"
+ 
+
 //#include "21_9_30-area_for_retang.cpp"
-//#include "21_8_30-selete_num_by_weight.cpp"
 //#include "21_10_2-dec2tohex.cpp"
 //#include "21_10_3-fraction2todec.cpp"
 //#include "21_10_10-sumfor_1234.cpp"
@@ -219,6 +222,7 @@
 //#include "22_6_21-defanging-an-ip-address.cpp"
 //#include "22_6_22-find-bottom-left-tree-value.cpp"
 //#include "22_6_23-substring-with-concatenation-of-all-words.cpp"
+//#include "22_6_24-find-largest-value-in-each-tree-row.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
@@ -277,8 +281,7 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	string a = "1", b = "10";
-	cout << (a < b) << endl;
+
 }
 
 

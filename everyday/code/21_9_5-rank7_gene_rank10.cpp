@@ -1,19 +1,21 @@
-﻿#include <iostream>
-#include <random>
-#include <time.h>
-/*
+﻿/*
+
+
 已有方法 rand7 可生成 1 到 7 范围内的均匀随机整数，试写一个方法 rand10 生成 1 到 10 范围内的均匀随机整数。
 
 不要使用系统的 Math.random() 方法。
 
 
-Solution temp;
+    Solution temp;
     int result = temp.rand10();
     cout << result << endl;
 
+
 */
 
-
+#include <iostream>
+#include <random>
+#include <time.h>
 
 class Solution {
 public:

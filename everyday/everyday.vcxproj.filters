@@ -864,6 +864,18 @@
     <ClCompile Include="code\22_6_23-substring-with-concatenation-of-all-words.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_9_1-compare-version-numbers.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_24-find-largest-value-in-each-tree-row.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_9_3-smallest-k-lcci.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_9_4-fei-bo-na-qi-shu-lie-lcof.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
