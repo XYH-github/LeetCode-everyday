@@ -1,4 +1,6 @@
 ﻿/*
+
+
 给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
 
 注意:
@@ -22,10 +24,11 @@
 输出:
 "ffffffff"
 
-Solution temp;
+	Solution temp;
 	int num = -1;
 	string result = temp.toHex(num);
 	cout << result << endl;
+
 
 */
 #include <string>
@@ -40,7 +43,7 @@ public:
 		string result = "";
 		while (num != 0) {
 			char temp = num & 0x0f;
-			num = (unsigned)num >> 4;
+			num = num >> 4;
 			result = (temp > 9 ? char(temp + 87) : char(temp + 48)) + result;
 		}
 		return result;

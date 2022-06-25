@@ -2,17 +2,19 @@
 
 //#include "21_8_28-sum_for_onedimenarray.cpp"
 //#include "21_8_29-sum_for_oddlength_array.cpp"
-#include "21_8_30-selete_num_by_weight.cpp"
+//#include "21_8_30-selete_num_by_weight.cpp"
+//#include "21_8_31-corporate-flight-bookings.cpp"
 //#include "21_9_1-compare-version-numbers.cpp"
 //#include "21_9_2-linedlist_get_reciprocal.cpp"
 //#include "21_9_3-smallest-k-lcci.cpp"
 //#include "21_9_4-fei-bo-na-qi-shu-lie-lcof.cpp"
 //#include "21_9_5-rank7_gene_rank10.cpp"
- 
-
 //#include "21_9_30-area_for_retang.cpp"
-//#include "21_10_2-dec2tohex.cpp"
+//#include "21_10_1-destination-city.cpp"
+#include "21_10_2-dec2tohex.cpp"
 //#include "21_10_3-fraction2todec.cpp"
+// 
+// 
 //#include "21_10_10-sumfor_1234.cpp"
 //#include "21_10_9-dataflow_to_array.cpp"
 //#include "21_10_8-get_repeat_form_dna.cpp"
@@ -277,11 +279,14 @@
 
 
 int main(void) {
-	//string input = "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]];";
+	//string input = "bookings = [[1,2,10],[2,3,20],[2,5,25]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-
+	Solution temp;
+	int num = -1;
+	string result = temp.toHex(num);
+	cout << result << endl;
 }
 
 

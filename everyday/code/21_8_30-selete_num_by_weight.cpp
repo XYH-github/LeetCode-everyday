@@ -43,6 +43,11 @@ solution.pickIndex(); // 返回 0，返回下标 0，返回该下标概率为 1/
 ......
 诸若此类。
 
+    vector<int> w = {1, 3};
+    Solution temp(w);
+    cout << temp.pickIndex() << endl;
+    cout << temp.pickIndex() << endl;
+    cout << temp.pickIndex() << endl;
 
 */
 
@@ -90,7 +95,22 @@ public:
 
     int pickIndex() {
         int index = rand() % _len;
-        return lower_bound(prefix_sum.begin(), prefix_sum.end(), index) - prefix_sum.begin();
+        // int left = 0;
+        // int right = prefix_sum.size() - 1;
+        // while(left < right){
+        //     int mid = left + (right - left + 1) / 2;
+        //     if (prefix_sum[mid] <= index)
+        //         left = mid;
+        //     else
+        //         right = mid - 1;
+        // }
+        // return left;
+
+        //return upper_bound(prefix_sum.begin(), prefix_sum.end(), index) - prefix_sum.begin() - 1;
+
+        return prefix_sum.rend() - upper_bound(prefix_sum.rbegin(), prefix_sum.rend(), index, [&](const int val, const int mid) {
+            return mid <= val;
+            }) - 1;
     }
 
 private:

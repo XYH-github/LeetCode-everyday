@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="code\21_10_1-destination-city.cpp" />
     <ClCompile Include="code\21_10_11-num_to_english_format.cpp" />
     <ClCompile Include="code\21_10_29-self-crossing.cpp" />
     <ClCompile Include="code\21_10_30-single-number.cpp" />
@@ -86,6 +87,7 @@
     <ClCompile Include="code\21_8_28-sum_for_onedimenarray.cpp" />
     <ClCompile Include="code\21_8_29-sum_for_oddlength_array.cpp" />
     <ClCompile Include="code\21_8_30-selete_num_by_weight.cpp" />
+    <ClCompile Include="code\21_8_31-corporate-flight-bookings.cpp" />
     <ClCompile Include="code\21_9_1-compare-version-numbers.cpp" />
     <ClCompile Include="code\21_9_2-linedlist_get_reciprocal.cpp" />
     <ClCompile Include="code\21_9_3-smallest-k-lcci.cpp" />

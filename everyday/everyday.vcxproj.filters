@@ -876,6 +876,12 @@
     <ClCompile Include="code\21_9_4-fei-bo-na-qi-shu-lie-lcof.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\21_8_31-corporate-flight-bookings.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_1-destination-city.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">
