@@ -43,7 +43,7 @@ public:
 		string result = "";
 		while (num != 0) {
 			char temp = num & 0x0f;
-			num = num >> 4;
+			num = (unsigned)num >> 4;
 			result = (temp > 9 ? char(temp + 87) : char(temp + 48)) + result;
 		}
 		return result;

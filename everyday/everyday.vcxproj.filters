@@ -882,6 +882,12 @@
     <ClCompile Include="code\21_10_1-destination-city.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_25-JEj789.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\22_6_26-random-pick-with-blacklist.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

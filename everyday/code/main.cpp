@@ -11,7 +11,8 @@
 //#include "21_9_5-rank7_gene_rank10.cpp"
 //#include "21_9_30-area_for_retang.cpp"
 //#include "21_10_1-destination-city.cpp"
-#include "21_10_2-dec2tohex.cpp"
+//#include "21_10_2-dec2tohex.cpp"
+// 
 //#include "21_10_3-fraction2todec.cpp"
 // 
 // 
@@ -225,6 +226,8 @@
 //#include "22_6_22-find-bottom-left-tree-value.cpp"
 //#include "22_6_23-substring-with-concatenation-of-all-words.cpp"
 //#include "22_6_24-find-largest-value-in-each-tree-row.cpp"
+//#include "22_6_25-JEj789.cpp"
+#include "22_6_26-random-pick-with-blacklist.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
@@ -279,14 +282,16 @@
 
 
 int main(void) {
-	//string input = "bookings = [[1,2,10],[2,3,20],[2,5,25]];";
+	//string input = "costs = [[17,2,17],[16,16,5],[14,3,19]];";
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	Solution temp;
-	int num = -1;
-	string result = temp.toHex(num);
-	cout << result << endl;
+	int n = 4;
+	vector<int> input_vec = { 0, 1};
+	Solution temp(n, input_vec);
+	cout << temp.pick() << endl;
+	cout << temp.pick() << endl;
+	cout << temp.pick() << endl;
 }
 
 
