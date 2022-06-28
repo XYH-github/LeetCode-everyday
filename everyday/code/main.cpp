@@ -227,7 +227,9 @@
 //#include "22_6_23-substring-with-concatenation-of-all-words.cpp"
 //#include "22_6_24-find-largest-value-in-each-tree-row.cpp"
 //#include "22_6_25-JEj789.cpp"
-#include "22_6_26-random-pick-with-blacklist.cpp"
+//#include "22_6_26-random-pick-with-blacklist.cpp"
+//#include "22_6_27-longest-uncommon-subsequence-ii.cpp"
+#include "22_6_28-wiggle-sort-ii.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
@@ -286,12 +288,7 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-	int n = 4;
-	vector<int> input_vec = { 0, 1};
-	Solution temp(n, input_vec);
-	cout << temp.pick() << endl;
-	cout << temp.pick() << endl;
-	cout << temp.pick() << endl;
+
 }
 
 

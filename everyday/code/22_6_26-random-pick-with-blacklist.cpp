@@ -40,6 +40,13 @@ blacklist 中所有值都 不同
 
 链接：https://leetcode.cn/problems/random-pick-with-blacklist
 
+    int n = 4;
+    vector<int> input_vec = { 0, 1};
+    Solution temp(n, input_vec);
+    cout << temp.pick() << endl;
+    cout << temp.pick() << endl;
+    cout << temp.pick() << endl;
+
  */
 
 #include <vector>
@@ -51,18 +58,18 @@ class Solution {
 public:
     Solution(int n, vector<int>& blacklist) {
         int len = blacklist.size();
-        set.insert(blacklist.begin(), blacklist.end());
         _len = n - len;
+        for (int b : blacklist)
+            if (b >= _len)
+                set.emplace(b);
         int i = 0;
         --n;
-        while (i < _len) {
-            if (set.count(i)) {
+        for (int b : blacklist)
+            if (b < _len) {
                 while (set.count(n))
                     n--;
-                map[i] = n--;
+                map[b] = n--;
             }
-            ++i;
-        }
     }
 
     int pick() {

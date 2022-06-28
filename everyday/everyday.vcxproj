@@ -283,6 +283,8 @@
     <ClCompile Include="code\22_6_24-find-largest-value-in-each-tree-row.cpp" />
     <ClCompile Include="code\22_6_25-JEj789.cpp" />
     <ClCompile Include="code\22_6_26-random-pick-with-blacklist.cpp" />
+    <ClCompile Include="code\22_6_27-longest-uncommon-subsequence-ii.cpp" />
+    <ClCompile Include="code\22_6_28-wiggle-sort-ii.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />
     <ClCompile Include="code\22_6_5-generate-random-point-in-a-circle.cpp" />
