@@ -894,6 +894,12 @@
     <ClCompile Include="code\22_6_28-wiggle-sort-ii.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\22_6_29-encode-and-decode-tinyurl.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\21_10_4-license-key-formatting.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Print.h">

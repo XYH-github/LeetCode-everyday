@@ -12,9 +12,8 @@
 //#include "21_9_30-area_for_retang.cpp"
 //#include "21_10_1-destination-city.cpp"
 //#include "21_10_2-dec2tohex.cpp"
-// 
 //#include "21_10_3-fraction2todec.cpp"
-// 
+#include "21_10_4-license-key-formatting.cpp" 
 // 
 //#include "21_10_10-sumfor_1234.cpp"
 //#include "21_10_9-dataflow_to_array.cpp"
@@ -229,7 +228,8 @@
 //#include "22_6_25-JEj789.cpp"
 //#include "22_6_26-random-pick-with-blacklist.cpp"
 //#include "22_6_27-longest-uncommon-subsequence-ii.cpp"
-#include "22_6_28-wiggle-sort-ii.cpp"
+//#include "22_6_28-wiggle-sort-ii.cpp"
+//#include "22_6_29-encode-and-decode-tinyurl.cpp"
 
 // 
 //#include "22_5_30-sum-of-root-to-leaf-binary-numbers.cpp"
@@ -288,7 +288,11 @@ int main(void) {
 	//Print<string>::VectorFormTrans(input);
 	//cout << input << endl;
 
-
+	string S = "5F3Z-2e-9-w";
+	int k = 4;
+	Solution temp;
+	string ret = temp.licenseKeyFormatting(S, k);
+	cout << ret << endl;
 }
 
 

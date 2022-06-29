@@ -1,4 +1,6 @@
 ﻿/*
+
+
 给定两个整数，分别表示分数的分子 numerator 和分母 denominator，以 字符串形式返回小数 。
 
 如果小数部分为循环小数，则将循环的部分括在括号内。
@@ -30,23 +32,99 @@
 输入：numerator = 1, denominator = 5
 输出："0.2"
 
-Solution temp;
+    Solution temp;
     string result = temp.fractionToDecimal(-2147483648, 1);
     cout << result << endl;
+
 
 */
 
 #include <string>
+#include <unordered_map>
 using namespace std;
+
+//class Solution {
+//public:
+//    string fractionToDecimal(int numerator, int denominator) {
+//        int iter_count = 1;
+//        int zf_flag = 0;
+//        string result;
+//        if ((numerator > 0 && denominator < 0) || (numerator < 0 && denominator > 0)) {
+//            
+//            zf_flag = 1;
+//            ++iter_count;
+//        }
+//        numerator = abs(numerator);
+//        denominator = abs(denominator);
+//        long temp;
+//        if (numerator / denominator == 0) {
+//            result.push_back('0');
+//            ++iter_count;
+//        }
+//        else {
+//            temp = numerator / denominator;
+//            while (temp != 0) {
+//                result = char(temp % 10 + '0') + result;
+//                temp = temp / 10;
+//                ++iter_count;
+//            }
+//        }
+//        if (zf_flag == 1)
+//            result = '-' + result;
+//        if ((temp = numerator % denominator) == 0)
+//            return result;
+//
+//        result.push_back('.');
+//        ++iter_count;
+//        while (iter_count < 1e+4) {
+//            temp *= 10;
+//            result.push_back(char( temp / denominator + '0'));
+//            ++iter_count;
+//            if ((temp = temp % denominator) == 0)
+//                break;
+//            if (JudgeLoop(result) == true)
+//                break;
+//        }
+//        return result;
+//    }
+//
+//    bool JudgeLoop(string& str) {
+//        char LOOP_COUNT = 10;
+//        int length = str.size();
+//        int max_len = length / LOOP_COUNT;
+//        for (int i = 1; i <= max_len; ++i) {
+//            bool loop_flag = 1;
+//            for (int j = 1; j <= i; ++j) {
+//                for (int k = 1; k < LOOP_COUNT; ++k) {
+//                    if (str[length - j] != str[length - k * i - j]) {
+//                        loop_flag = 0;
+//                        break;
+//                    }
+//                }
+//                if (loop_flag == 0)
+//                    break;
+//            }
+//            if (loop_flag == 1) {
+//                str = str.substr(0, length - (LOOP_COUNT - 1) * i);
+//                str.insert(length - LOOP_COUNT * i, "(");
+//                str.push_back(')');
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+//};
+
+
 
 class Solution {
 public:
     string fractionToDecimal(int numerator, int denominator) {
-        int iter_count = 1;
+        int iter_count = 0;
         int zf_flag = 0;
         string result;
         if ((numerator > 0 && denominator < 0) || (numerator < 0 && denominator > 0)) {
-            
+
             zf_flag = 1;
             ++iter_count;
         }
@@ -72,41 +150,21 @@ public:
 
         result.push_back('.');
         ++iter_count;
+        unordered_map<int, int> map;
         while (iter_count < 1e+4) {
             temp *= 10;
-            result.push_back(char( temp / denominator + '0'));
+            if (map.count(temp))
+                break;
+            result.push_back(char(temp / denominator + '0'));
             ++iter_count;
+            map[temp] = iter_count;
             if ((temp = temp % denominator) == 0)
                 break;
-            if (JudgeLoop(result) == true)
-                break;
+        }
+        if (map.count(temp)) {
+            result.insert(map[temp] - 1, 1, '(');
+            result.push_back(')');
         }
         return result;
-    }
-
-    bool JudgeLoop(string& str) {
-        char LOOP_COUNT = 10;
-        int length = str.size();
-        int max_len = length / LOOP_COUNT;
-        for (int i = 1; i <= max_len; ++i) {
-            bool loop_flag = 1;
-            for (int j = 1; j <= i; ++j) {
-                for (int k = 1; k < LOOP_COUNT; ++k) {
-                    if (str[length - j] != str[length - k * i - j]) {
-                        loop_flag = 0;
-                        break;
-                    }
-                }
-                if (loop_flag == 0)
-                    break;
-            }
-            if (loop_flag == 1) {
-                str = str.substr(0, length - (LOOP_COUNT - 1) * i);
-                str.insert(length - LOOP_COUNT * i, "(");
-                str.push_back(')');
-                return true;
-            }
-        }
-        return false;
     }
 };

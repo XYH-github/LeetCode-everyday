@@ -24,6 +24,7 @@
     <ClCompile Include="code\21_10_29-self-crossing.cpp" />
     <ClCompile Include="code\21_10_30-single-number.cpp" />
     <ClCompile Include="code\21_10_31-words-for-keyboard.cpp" />
+    <ClCompile Include="code\21_10_4-license-key-formatting.cpp" />
     <ClCompile Include="code\21_10_8-get_repeat_form_dna.cpp" />
     <ClCompile Include="code\21_10_10-sumfor_1234.cpp" />
     <ClCompile Include="code\21_10_2-dec2tohex.cpp" />
@@ -285,6 +286,7 @@
     <ClCompile Include="code\22_6_26-random-pick-with-blacklist.cpp" />
     <ClCompile Include="code\22_6_27-longest-uncommon-subsequence-ii.cpp" />
     <ClCompile Include="code\22_6_28-wiggle-sort-ii.cpp" />
+    <ClCompile Include="code\22_6_29-encode-and-decode-tinyurl.cpp" />
     <ClCompile Include="code\22_6_3-consecutive-numbers-sum.cpp" />
     <ClCompile Include="code\22_6_4-unique-email-addresses.cpp" />
     <ClCompile Include="code\22_6_5-generate-random-point-in-a-circle.cpp" />

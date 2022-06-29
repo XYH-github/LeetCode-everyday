@@ -28,4 +28,65 @@
 
 链接：https://leetcode.cn/problems/wiggle-sort-ii
 
+    vector<int> nums = { 1, 1, 2, 1, 2, 2, 1 };
+    Solution temp;
+    temp.wiggleSort(nums);
+    Print<int>::PrintOneDemionVector(nums);
+
 */
+
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+//class Solution {
+//public:
+//    void wiggleSort(vector<int>& nums) {
+//        auto mid_iter = nums.begin() + nums.size() / 2;
+//        nth_element(nums.begin(), mid_iter, nums.end());
+//        int mid = *mid_iter;
+//        int k = nums.size() - 1;
+//        int i = 0;
+//        int j = 0;
+//        while (j <= k) {
+//            if (nums[j] > mid)
+//                swap(nums[j], nums[k--]);
+//            else if (nums[j] < mid)
+//                swap(nums[i++], nums[j++]);
+//            else
+//                j++;
+//        }
+//        if (nums.size() % 2 == 1)
+//            ++mid_iter;
+//        vector<int> temp1(nums.begin(), mid_iter);
+//        vector<int> temp2(mid_iter, nums.end());
+//        for (int i = 0; i < temp1.size(); ++i)
+//            nums[2 * i] = temp1[temp1.size() - 1 - i];
+//        for (int i = 0; i < temp2.size(); ++i)
+//            nums[2 * i + 1] = temp2[temp2.size() - 1 - i];
+//    }
+//};
+
+
+class Solution {
+public:
+    void wiggleSort(vector<int>& nums) {
+        int n = nums.size();
+        auto mid_iter = nums.begin() + n / 2;
+        nth_element(nums.begin(), mid_iter, nums.end());
+        int mid = *mid_iter;
+        int k = n - 1;
+        int i = 0, j = 0;
+
+//#define A(i) nums[(1 + 2 * (i)) % ( n|1)]
+#define A(i) nums[(1 + 2 * (i)) % ( n|1)]
+        while (j <= k) {
+            if (A(j) > mid)
+                swap(A(j), A(k--));
+            else if (A(j) < mid)
+                swap(A(i++), A(j++));
+            else
+                j++;
+        }
+    }
+};
